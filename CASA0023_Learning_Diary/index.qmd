@@ -7,3 +7,8 @@ To learn more about Quarto books visit <https://quarto.org/docs/books>.
 ```{r}
 1 + 1
 ```
+
+
+```{r echo=FALSE, out.width = "55%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "pic0.jpg"))
+```
