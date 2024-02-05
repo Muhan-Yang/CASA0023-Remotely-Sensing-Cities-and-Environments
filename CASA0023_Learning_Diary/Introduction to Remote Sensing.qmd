@@ -3,7 +3,7 @@
 ## Summary
 
 |                               |                                                                                                    |
-|--------------------|----------------------------------------------------|
+|-------------------------------|----------------------------------------------------------------------------------------------------|
 | **Key Aspect**                | **Description**                                                                                    |
 | **Definitions**               | Remote sensing as a technique for collecting Earth's surface information from a distance.          |
 | **Platforms**                 | Satellites, planes, drones ("spectroradiometer"in a lab or in the field)used for data acquisition. |
@@ -13,7 +13,7 @@
 | **Resolutions**               | Spatial, spectral, temporal, radiometric resolutions in remote sensing.                            |
 | **Applications**              | Land cover, agriculture, climate change, disaster management.                                      |
 
-### definitions
+### Definitions
 
 NASA defines remote sensing as **the process of acquiring information from a distance**, commonly associated with Earth Observation (EO), utilizing sensors on platforms like satellites, drones, and more. Currently, over 150 satellites equipped with these sensors orbit Earth, collecting essential data. However, the proliferation of space technology has led to a challenge with space debris, with NASA tracking over 27,000 pieces, underscoring the need for strategies to manage and mitigate space pollution.
 
@@ -224,6 +224,8 @@ The process involves exporting Sentinel and Landsat data from SNAP as GeoTIFFs a
 ```{r echo=FALSE, out.width = "100%", fig.align='center', cache=FALSE}
 knitr::include_graphics(here::here("images", "Rplot01.png"))
 ```
+
+*Randomly selected various land use types in Cape Town for a comparative analysis of their spectral characteristics*
 
 ### Practical Application of RS
 
