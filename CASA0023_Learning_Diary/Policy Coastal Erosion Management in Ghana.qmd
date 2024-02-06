@@ -18,9 +18,9 @@ Ghana's coastline stretches over 550 kilometers and is crucial to the country's 
 
 *Video: Erosion wearing down Ghana's coast*
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w7Y_-DUGfuI?si=R8m5oDLfOsuWrAHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-
-</iframe>
+```{r echo=FALSE, fig.align='center', cache=TRUE}
+knitr::include_url("https://www.youtube.com/embed/w7Y_-DUGfuI?si=R8m5oDLfOsuWrAHM")
+```
 
 ### Local Government Policy Overview
 
@@ -56,7 +56,19 @@ Ghana's efforts to manage coastal erosion resonate with several United Nations S
 
 ### Accra as a Case Study in Coastal Erosion
 
-Next, Accra was specifically chosen as a case study to explore regional dynamics. The Accra region confronts severe coastal erosion, with substantial land loss affecting livelihoods and infrastructure. From 2005 to 2017, about [37%](https://news.mongabay.com/2022/03/as-rising-seas-destroy-ghanas-coastal-communities-researchers-warn-against-a-seawall-only-solution/) of the coastal land succumbed to erosion and flooding. Combining local insights with scientific research has been pivotal in tackling this challenge, revealing an erosion rate of [-0.91 m/year](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6014148/). While the Ghanaian government has implemented seawall constructions as a countermeasure, researchers stress the importance of adopting a more comprehensive approach beyond solely relying on s
+```{r echo=FALSE, out.width = "45%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "pic5-01.png"))
+```
+
+*Coastal erosion along portion of western Accra coast Source:* Appeaning Addo et al. (2013)
+
+```{r echo=FALSE, out.width = "45%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "pic6.jpg"))
+```
+
+Orthogonal transects for rates of change estimations Source: Appeaning Addo et al. (2008)
+
+Next, Accra was specifically chosen as a case study to explore regional dynamics. The Accra region confronts severe coastal erosion, with substantial land loss affecting livelihoods and infrastructure. From 2005 to 2017, about [37%](https://news.mongabay.com/2022/03/as-rising-seas-destroy-ghanas-coastal-communities-researchers-warn-against-a-seawall-only-solution/) of the coastal land succumbed to erosion and flooding. Combining local insights with scientific research has been pivotal in tackling this challenge, revealing an erosion rate of [-0.91 m/year](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6014148/). While the Ghanaian government has implemented seawall constructions as a countermeasure, researchers stress the importance of adopting a more comprehensive approach beyond solely relying on structural defenses.
 
 ### Leveraging Remote Sensing for Coastal Management
 
@@ -79,6 +91,10 @@ Now, having learned about the capabilities of remote sensing, I see a broader sc
 As a landscape architecture student, the shift from a micro to a macro perspective, enabled by remote sensing, represents a significant expansion of the tools available to me. It opens up new avenues for collaboration with scientists, policymakers, and communities in the fight against coastal erosion. By combining design principles with cutting-edge technology, I can contribute to creating more effective, adaptive, and holistic solutions that address the root causes of coastal erosion while enhancing the quality of life for affected populations. This learning journey underscores the importance of interdisciplinary approaches in tackling complex environmental challenges.
 
 ## Reference
+
+Appeaning Addo, K., Walkden, M. & Mills, J.P., 2008. Detection, measurement and prediction of shoreline recession in Accra, Ghana. *Journal of Photogrammetry and Remote Sensing*, 63, pp.543--558.
+
+Appeaning Addo, K., 2013. Assessing Coastal Vulnerability Index to Climate Change: the Case of Accra -- Ghana. In: Proceedings of the 12th International Coastal Symposium, Plymouth, England, *Journal of Coastal Research*, Special Issue No. 65, pp.1892-1897.
 
 Appeaning Addo, K. & Appeaning Addo, I., 2016. Coastal erosion management in Accra: Combining local knowledge and empirical research. *Jàmbá: Journal of Disaster Risk Studies*, 8(1), p.274. Available at: <https://jamba.org.za/index.php/jamba/article/view/274> \[Accessed 31 Jan. 2024\].
 

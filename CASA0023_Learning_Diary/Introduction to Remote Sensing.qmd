@@ -3,7 +3,7 @@
 ## Summary
 
 |                               |                                                                                                    |
-|-------------------------------|----------------------------------------------------------------------------------------------------|
+|------------------|------------------------------------------------------|
 | **Key Aspect**                | **Description**                                                                                    |
 | **Definitions**               | Remote sensing as a technique for collecting Earth's surface information from a distance.          |
 | **Platforms**                 | Satellites, planes, drones ("spectroradiometer"in a lab or in the field)used for data acquisition. |
@@ -125,9 +125,9 @@ Remote sensing data primarily uses raster formats, organizing the Earth's surfac
 
 Videro: Organizing Multi-band Image Data (BIL,BIP and BSQ Formats)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cJAN9un3r6I?si=Ugk7tK4BVG2hhC_S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-
-</iframe>
+```{r echo=FALSE, fig.align='center', cache=TRUE}
+knitr::include_url("https://www.youtube.com/embed/cJAN9un3r6I?si=Ugk7tK4BVG2hhC_S")
+```
 
 -   **GeoTIFF:** The most common format, incorporating geographic metadata, and widely supported across GIS and remote sensing platforms.
 
