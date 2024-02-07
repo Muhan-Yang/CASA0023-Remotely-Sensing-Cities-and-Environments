@@ -28,7 +28,6 @@ book:
     tools:
     - icon: github
     search: true
-  sharing: [twitter, facebook]
   chapters:
     - index.qmd
     - Introduction to Remote Sensing.qmd

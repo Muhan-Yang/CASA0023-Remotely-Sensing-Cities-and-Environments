@@ -28,7 +28,7 @@ knitr::include_url("https://www.youtube.com/embed/w7Y_-DUGfuI?si=R8m5oDLfOsuWrAH
 knitr::include_graphics(here::here("images", "pic3-01.png"))
 ```
 
-In response to these challenges, the Ghanaian government has developed and implemented policies aimed at mitigating coastal erosion. The "[Coastal Management Plan](https://www.mwh.gov.gh/wp-content/uploads/2019/05/MEET-THE-PRESS-high-light-web-1.pdf)" focuses on constructing seawalls at critical points along the coast to protect against erosion. Moreover, the "[National Urban Policy Framework - Ghana](https://nupdb.urbanpolicyplatform.org/listings/Ghana)" discusses broader urban challenges, including coastal erosion, and emphasizes the socio-economic impacts and the importance of an integrated approach to urban management.
+In response to these challenges, the Ghanaian government has developed and implemented policies aimed at mitigating coastal erosion. [Ghana's National Environmental Policy](http://maps.cersgis.org/nipportal/POLICIES/NATIONAL_ENVIRONMENTAL_POLICY_(MAIN).pdf) now mentions marine and coastal degradation as one of the country's environmental challenges.The "[Coastal Management Plan](https://www.mwh.gov.gh/wp-content/uploads/2019/05/MEET-THE-PRESS-high-light-web-1.pdf)" focuses on constructing seawalls at critical points along the coast to protect against erosion. Moreover, the "[National Urban Policy Framework - Ghana](https://nupdb.urbanpolicyplatform.org/listings/Ghana)" discusses broader urban challenges, including coastal erosion, and emphasizes the socio-economic impacts and the importance of an integrated approach to urban management.
 
 -   **Policy Initiatives for Achieving Objective 4: Improve the Quality of the Urban Environment**
 
