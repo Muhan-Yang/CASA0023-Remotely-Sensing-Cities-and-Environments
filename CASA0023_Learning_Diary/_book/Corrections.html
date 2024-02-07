@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="The CASA0023 Remotely Sensing Cities and Environments learning diary">
 
-<title>CASA0023 Remotely Sensing Cities and Environments Learning Diary - 3&nbsp; Corrections</title>
+<title>CASA0023 Remotely Sensing Cities and Environments Learning Diary - 3&nbsp; Remote Sensing Technologies: Pre-processing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,60 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -127,6 +73,8 @@ gtag('js', new Date());
 gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -180,7 +128,7 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Corrections.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Corrections</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Corrections.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Technologies: Pre-processing</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -203,7 +151,7 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text">Hello, RS!</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -215,13 +163,13 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Xaringan.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Xaringan</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Xaringan：Sentinel-3</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Corrections.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Corrections</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Technologies: Pre-processing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -242,14 +190,28 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">3.1</span> Summary</a>
+  <ul class="collapse">
+  <li><a href="#remote-sensing-data-processing-and-correction-formulas" id="toc-remote-sensing-data-processing-and-correction-formulas" class="nav-link" data-scroll-target="#remote-sensing-data-processing-and-correction-formulas"><span class="header-section-number">3.1.1</span> Remote Sensing Data Processing and Correction Formulas</a></li>
+  <li><a href="#remote-sensing-data-enhancement-formulas" id="toc-remote-sensing-data-enhancement-formulas" class="nav-link" data-scroll-target="#remote-sensing-data-enhancement-formulas"><span class="header-section-number">3.1.2</span> Remote Sensing Data Enhancement Formulas</a></li>
+  <li><a href="#remote-sensing-data-analysis-formulas" id="toc-remote-sensing-data-analysis-formulas" class="nav-link" data-scroll-target="#remote-sensing-data-analysis-formulas"><span class="header-section-number">3.1.3</span> Remote Sensing Data Analysis Formulas</a></li>
+  </ul></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">3.2</span> Applications</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">3.4</span> References</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Muhan-Yang/CASA0023-Remotely-Sensing-Cities-and-Environments/edit/main/Corrections.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/Muhan-Yang/CASA0023-Remotely-Sensing-Cities-and-Environments/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Corrections</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Technologies: Pre-processing</span></h1>
 </div>
 
 
@@ -264,21 +226,119 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 
 </header>
 
-<p>This is a book created from markdown and executable code.</p>
-<p>See <span class="citation" data-cites="knuth84">Knuth (<a href="references.html#ref-knuth84" role="doc-biblioref">1984</a>)</span> for additional discussion of literate programming.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+<p>TBD…</p>
+<section id="summary" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> Summary</h2>
+<table class="table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 67%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Key Aspect</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Remote Sensing Evolution with Landsat 9</strong></td>
+<td>A historical journey highlighting the development of remote sensing technology, focusing on Landsat 9 and the significant contributions of Virginia Norwood. Initially, NASA preferred analog RBV cameras for remote sensing, capturing green, red, and NIR spectra. Norwood advocated for a digital Multispectral Scanner (MSS), foreseeing its potential to capture both visible and invisible wavelengths, leading to the adoption of MSS as a standard for future remote sensing endeavors.</td>
+</tr>
+<tr class="even">
+<td><strong>Data Corrections and Pre-processing</strong></td>
+<td>Detailed exploration of essential pre-processing steps necessary for remote sensing data usability, including geometric, atmospheric, orthorectification/topographic, and radiometric corrections. These corrections address errors introduced by sensor imperfections, atmospheric conditions, Earth’s rotation, and perspective distortions due to elevation and view angle, ensuring the accuracy and reliability of the remote sensing data.</td>
+</tr>
+<tr class="odd">
+<td><em>Radiometric Calibration and Remote Sensing Jargon</em></td>
+<td>Clarification of terms like Digital Number (DN), radiance, and reflectance, explaining the calibration process that converts DNs into meaningful spectral radiance values.</td>
+</tr>
+<tr class="even">
+<td><em>Atmospheric Correction Types</em></td>
+<td>Explores atmospheric correction methods, distinguishing between relative and absolute approaches to adjust imagery for atmospheric influences. Techniques include Dark Object Subtraction (DOS), Psuedo-invariant Features (PIFs), and use of atmospheric radiative transfer models like MODTRAN and 6S. These corrections are pivotal for accurate earth surface representation, especially when deriving biophysical parameters or comparing data across time and space.</td>
+</tr>
+<tr class="odd">
+<td><em>Orthorectification and Topographic Correction</em></td>
+<td>Focuses on adjusting images for relief displacement caused by terrain, ensuring that imagery accurately represents the Earth’s surface as if viewed directly from above. Utilizes sensor geometry and elevation models, alongside cosine correction and other mathematical models, to correct for distortions, a crucial step for applications requiring precise location accuracy.</td>
+</tr>
+<tr class="even">
+<td><strong>Data Joining and Enhancement</strong></td>
+<td>The process involves mosaicking to create seamless imagery, with techniques like feathering and histogram matching to ensure consistency across images. Enhancements such as contrast adjustment, filtering, PCA, texture analysis, and fusion (e.g., pan-sharpening) are employed to improve image quality, interpretability, and application relevance. These techniques help in highlighting specific features, reducing data dimensionality, and integrating data from multiple sensors, thereby enhancing the utility of remote sensing imagery for various applications.</td>
+</tr>
+</tbody>
+</table>
+<section id="remote-sensing-data-processing-and-correction-formulas" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="remote-sensing-data-processing-and-correction-formulas"><span class="header-section-number">3.1.1</span> Remote Sensing Data Processing and Correction Formulas</h3>
+<ol type="1">
+<li><strong>Geometric Correction Solution Model</strong>:
+<ul>
+<li>New x coordinate: <span class="math inline">\(x = a_0 + a_1x_i + a_2y_i + \epsilon_i\)</span></li>
+<li>New y coordinate: <span class="math inline">\(y = b_0 + b_1x_i + b_2y_i + \epsilon\_i\)</span></li>
+<li>These formulas are used for transforming distorted image coordinates to more accurate positions, where (x_i, y_i) are the locations in the original image, and (a_0, a_1, a_2, b_0, b_1, b_2) are geometric transformation coefficients derived from Ground Control Points (GCPs).</li>
+</ul></li>
+<li><strong>Inverse Mapping Method</strong> (for Geometric Correction):
+<ul>
+<li>Original x coordinate: <span class="math inline">\(x_i = a_0 + a_1x + a_2y + \epsilon\_i\)</span></li>
+<li>Original y coordinate: <span class="math inline">\(y_i = b_0 + b_1x + b_2y + \epsilon\_i\)</span></li>
+<li>The inverse mapping method is used to deduce the original image’s location from the corrected image positions to ensure accurate pixel value mapping.</li>
+</ul></li>
+<li><strong>Root Mean Square Error (RMSE)</strong>:
+<ul>
+<li><span class="math inline">\(RMSE = \sqrt{\frac{\sum(observed - predicted)^2}{n}}\)</span></li>
+<li>RMSE is used to evaluate the difference between model predictions and actual observations. The goal in ground control point correction is to minimize RMSE for improved accuracy.</li>
+</ul></li>
+</ol>
+</section>
+<section id="remote-sensing-data-enhancement-formulas" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="remote-sensing-data-enhancement-formulas"><span class="header-section-number">3.1.2</span> Remote Sensing Data Enhancement Formulas</h3>
+<ol type="1">
+<li><strong>Empirical Line Correction</strong>:
+<ul>
+<li>Reflectance (field spectrum) = Gain <span class="math inline">\(\times\)</span> Radiance (input data) + Offset</li>
+<li>This method corrects the data by performing linear regression against the satellite’s raw digital numbers combined with spectral data measured on the ground.</li>
+</ul></li>
+<li><strong>Solar Zenith Angle and Viewing Zenith Angle</strong>:
+<ul>
+<li><span class="math inline">\(cos(i) = cos(\theta\_p)cos(\theta\_z) + sin(\theta\_p)sin(\theta\_z)cos(\phi\_a - \phi\_o)\)</span></li>
+<li>Where <span class="math inline">\(\theta\_p\)</span> is the slope angle, <span class="math inline">\(\theta\_z\)</span> is the solar zenith angle, <span class="math inline">\(\phi\_a\)</span> is the slope aspect, and <span class="math inline">\(\phi\_o\)</span> is the solar azimuth. This formula is used for correcting the received radiance, especially when performing topographic correction.</li>
+</ul></li>
+</ol>
+</section>
+<section id="remote-sensing-data-analysis-formulas" class="level3" data-number="3.1.3">
+<h3 data-number="3.1.3" class="anchored" data-anchor-id="remote-sensing-data-analysis-formulas"><span class="header-section-number">3.1.3</span> Remote Sensing Data Analysis Formulas</h3>
+<ol type="1">
+<li><strong>Normalized Burn Ratio (NBR)</strong>:
+<ul>
+<li><span class="math inline">\(NBR = \frac{(NIR - SWIR)}{(NIR + SWIR)}\)</span></li>
+<li>This formula is used to detect burned areas or vegetation changes by comparing the reflectance between Near-Infrared (NIR) and Short-Wave Infrared (SWIR) bands.</li>
+</ul></li>
+<li><strong>Principal Component Analysis (PCA)</strong>:
+<ul>
+<li>PCA is utilized to transform multispectral data into a set of linearly uncorrelated variables (principal components), often for dimensionality reduction and highlighting significant variables.</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="applications" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">3.2</span> Applications</h2>
+<ul>
+<li><p><strong>Atmospheric Correction</strong>:</p></li>
+<li><p><strong>Geometric Correction</strong>:</p></li>
+<li><p><strong>Mosaicking</strong>:</p></li>
+<li><p><strong>Image Enhancements</strong>:</p></li>
+<li><p><strong>Data Fusion</strong>:</p></li>
+</ul>
+</section>
+<section id="reflection" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
+<p>The strategic application of advanced remote sensing techniques has the potential to revolutionize our understanding and management of urban environments…</p>
+<p>The challenge lies in harnessing this complexity to deliver clear, actionable insights for urban planning and environmental management, ensuring that the sophistication of the data translates into tangible benefits for urban communities and ecosystems…</p>
+</section>
+<section id="references" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="references"><span class="header-section-number">3.4</span> References</h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-knuth84" class="csl-entry" role="listitem">
-Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</em> 27 (2): 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.
-</div>
-</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -632,7 +692,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./Xaringan.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Xaringan</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Xaringan：Sentinel-3</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
@@ -645,4 +705,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Muhan-Yang/CASA0023-Remotely-Sensing-Cities-and-Environments/edit/main/Corrections.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/Muhan-Yang/CASA0023-Remotely-Sensing-Cities-and-Environments/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>
+</body></html>
