@@ -68,7 +68,9 @@ knitr::include_graphics(here::here("images", "pic6.jpg"))
 
 Orthogonal transects for rates of change estimations Source: Appeaning Addo et al. (2008)
 
-Next, Accra was specifically chosen as a case study to explore regional dynamics. The Accra region confronts severe coastal erosion, with substantial land loss affecting livelihoods and infrastructure. From 2005 to 2017, about [37%](https://news.mongabay.com/2022/03/as-rising-seas-destroy-ghanas-coastal-communities-researchers-warn-against-a-seawall-only-solution/) of the coastal land succumbed to erosion and flooding. Combining local insights with scientific research has been pivotal in tackling this challenge, revealing an erosion rate of [-0.91 m/year](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6014148/). While the Ghanaian government has implemented seawall constructions as a countermeasure, researchers stress the importance of adopting a more comprehensive approach beyond solely relying on structural defenses.
+Next, Accra was specifically chosen as a case study to explore regional dynamics. The Accra region confronts severe coastal erosion, with substantial land loss affecting livelihoods and infrastructure. From 2005 to 2017, about [37%](https://news.mongabay.com/2022/03/as-rising-seas-destroy-ghanas-coastal-communities-researchers-warn-against-a-seawall-only-solution/) of the coastal land succumbed to erosion and flooding. Combining local insights with scientific research has been pivotal in tackling this challenge, revealing an erosion rate of [-0.91 m/year](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6014148/).
+
+While the Ghanaian government has implemented seawall constructions as a countermeasure, researchers stress the importance of adopting a more comprehensive approach beyond solely relying on structural defenses.
 
 ### Leveraging Remote Sensing for Coastal Management
 

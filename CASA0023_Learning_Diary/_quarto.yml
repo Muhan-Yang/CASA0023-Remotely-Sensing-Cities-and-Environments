@@ -7,7 +7,6 @@ book:
   image: images/pic0.jpg
   cover-image: images/pic0.jpg
   date: "2024/1/18"
-  description: "The CASA0023 Remotely Sensing Cities and Environments learning diary"
   navbar:
     logo: images/pic0.jpg
     collapse: true

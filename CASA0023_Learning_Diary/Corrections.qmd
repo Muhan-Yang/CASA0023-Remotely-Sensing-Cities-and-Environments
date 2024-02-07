@@ -1,9 +1,65 @@
-# Corrections
+# Remote Sensing Technologies: Pre-processing
 
-This is a book created from markdown and executable code.
+TBD...
 
-See @knuth84 for additional discussion of literate programming.
+## Summary
 
-```{r}
-1 + 1
-```
+| **Key Aspect**                                      | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|-----------------------|------------------------------------------------|
+| **Remote Sensing Evolution with Landsat 9**         | A historical journey highlighting the development of remote sensing technology, focusing on Landsat 9 and the significant contributions of Virginia Norwood. Initially, NASA preferred analog RBV cameras for remote sensing, capturing green, red, and NIR spectra. Norwood advocated for a digital Multispectral Scanner (MSS), foreseeing its potential to capture both visible and invisible wavelengths, leading to the adoption of MSS as a standard for future remote sensing endeavors.                                                                                |
+| **Data Corrections and Pre-processing**             | Detailed exploration of essential pre-processing steps necessary for remote sensing data usability, including geometric, atmospheric, orthorectification/topographic, and radiometric corrections. These corrections address errors introduced by sensor imperfections, atmospheric conditions, Earth's rotation, and perspective distortions due to elevation and view angle, ensuring the accuracy and reliability of the remote sensing data.                                                                                                                               |
+| *Radiometric Calibration and Remote Sensing Jargon* | Clarification of terms like Digital Number (DN), radiance, and reflectance, explaining the calibration process that converts DNs into meaningful spectral radiance values.                                                                                                                                                                                                                                                                                                                                                                                                     |
+| *Atmospheric Correction Types*                      | Explores atmospheric correction methods, distinguishing between relative and absolute approaches to adjust imagery for atmospheric influences. Techniques include Dark Object Subtraction (DOS), Psuedo-invariant Features (PIFs), and use of atmospheric radiative transfer models like MODTRAN and 6S. These corrections are pivotal for accurate earth surface representation, especially when deriving biophysical parameters or comparing data across time and space.                                                                                                     |
+| *Orthorectification and Topographic Correction*     | Focuses on adjusting images for relief displacement caused by terrain, ensuring that imagery accurately represents the Earth's surface as if viewed directly from above. Utilizes sensor geometry and elevation models, alongside cosine correction and other mathematical models, to correct for distortions, a crucial step for applications requiring precise location accuracy.                                                                                                                                                                                            |
+| **Data Joining and Enhancement**                    | The process involves mosaicking to create seamless imagery, with techniques like feathering and histogram matching to ensure consistency across images. Enhancements such as contrast adjustment, filtering, PCA, texture analysis, and fusion (e.g., pan-sharpening) are employed to improve image quality, interpretability, and application relevance. These techniques help in highlighting specific features, reducing data dimensionality, and integrating data from multiple sensors, thereby enhancing the utility of remote sensing imagery for various applications. |
+
+### Remote Sensing Data Processing and Correction Formulas
+
+1.  **Geometric Correction Solution Model**:
+    -   New x coordinate: $x = a_0 + a_1x_i + a_2y_i + \epsilon_i$
+    -   New y coordinate: $y = b_0 + b_1x_i + b_2y_i + \epsilon\_i$
+    -   These formulas are used for transforming distorted image coordinates to more accurate positions, where (x_i, y_i) are the locations in the original image, and (a_0, a_1, a_2, b_0, b_1, b_2) are geometric transformation coefficients derived from Ground Control Points (GCPs).
+2.  **Inverse Mapping Method** (for Geometric Correction):
+    -   Original x coordinate: $x_i = a_0 + a_1x + a_2y + \epsilon\_i$
+    -   Original y coordinate: $y_i = b_0 + b_1x + b_2y + \epsilon\_i$
+    -   The inverse mapping method is used to deduce the original image's location from the corrected image positions to ensure accurate pixel value mapping.
+3.  **Root Mean Square Error (RMSE)**:
+    -   $RMSE = \sqrt{\frac{\sum(observed - predicted)^2}{n}}$
+    -   RMSE is used to evaluate the difference between model predictions and actual observations. The goal in ground control point correction is to minimize RMSE for improved accuracy.
+
+### Remote Sensing Data Enhancement Formulas
+
+1.  **Empirical Line Correction**:
+    -   Reflectance (field spectrum) = Gain $\times$ Radiance (input data) + Offset
+    -   This method corrects the data by performing linear regression against the satellite's raw digital numbers combined with spectral data measured on the ground.
+2.  **Solar Zenith Angle and Viewing Zenith Angle**:
+    -   $cos(i) = cos(\theta\_p)cos(\theta\_z) + sin(\theta\_p)sin(\theta\_z)cos(\phi\_a - \phi\_o)$
+    -   Where $\theta\_p$ is the slope angle, $\theta\_z$ is the solar zenith angle, $\phi\_a$ is the slope aspect, and $\phi\_o$ is the solar azimuth. This formula is used for correcting the received radiance, especially when performing topographic correction.
+
+### Remote Sensing Data Analysis Formulas
+
+1.  **Normalized Burn Ratio (NBR)**:
+    -   $NBR = \frac{(NIR - SWIR)}{(NIR + SWIR)}$
+    -   This formula is used to detect burned areas or vegetation changes by comparing the reflectance between Near-Infrared (NIR) and Short-Wave Infrared (SWIR) bands.
+2.  **Principal Component Analysis (PCA)**:
+    -   PCA is utilized to transform multispectral data into a set of linearly uncorrelated variables (principal components), often for dimensionality reduction and highlighting significant variables.
+
+## Applications
+
+-   **Atmospheric Correction**:
+
+-   **Geometric Correction**:
+
+-   **Mosaicking**:
+
+-   **Image Enhancements**:
+
+-   **Data Fusion**:
+
+## Reflection
+
+The strategic application of advanced remote sensing techniques has the potential to revolutionize our understanding and management of urban environments...
+
+The challenge lies in harnessing this complexity to deliver clear, actionable insights for urban planning and environmental management, ensuring that the sophistication of the data translates into tangible benefits for urban communities and ecosystems...
+
+## References
