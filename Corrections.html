@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CASA0023 Remotely Sensing Cities and Environments Learning Diary - 3&nbsp; Remote Sensing Technologies: Pre-processing</title>
+<title>CASA0023 Remotely Sensing Cities and Environments Learning Diary - 3&nbsp; Remote Sensing Technologies: Corrections</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -111,7 +111,7 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Corrections.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Technologies: Pre-processing</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Corrections.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Technologies: Corrections</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -152,13 +152,19 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Corrections.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Technologies: Pre-processing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Technologies: Corrections</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Policy Coastal Erosion Management in Ghana.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Policy: Coastal Erosion Management in Ghana</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Google Earth Engine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Introduction to Google Earth Engine</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -183,7 +189,11 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
   <li><a href="#remote-sensing-data-enhancement-formulas" id="toc-remote-sensing-data-enhancement-formulas" class="nav-link" data-scroll-target="#remote-sensing-data-enhancement-formulas"><span class="header-section-number">3.1.2</span> Remote Sensing Data Enhancement Formulas</a></li>
   <li><a href="#remote-sensing-data-analysis-formulas" id="toc-remote-sensing-data-analysis-formulas" class="nav-link" data-scroll-target="#remote-sensing-data-analysis-formulas"><span class="header-section-number">3.1.3</span> Remote Sensing Data Analysis Formulas</a></li>
   </ul></li>
-  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">3.2</span> Applications</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">3.2</span> Applications</a>
+  <ul class="collapse">
+  <li><a href="#ratio-normalised-difference-vegetation-index-ndvi" id="toc-ratio-normalised-difference-vegetation-index-ndvi" class="nav-link" data-scroll-target="#ratio-normalised-difference-vegetation-index-ndvi"><span class="header-section-number">3.2.1</span> <strong>Ratio: Normalised Difference Vegetation Index (NDVI):</strong></a></li>
+  <li><a href="#texture-gray-level-co-occurrence-matrix-glcm" id="toc-texture-gray-level-co-occurrence-matrix-glcm" class="nav-link" data-scroll-target="#texture-gray-level-co-occurrence-matrix-glcm"><span class="header-section-number">3.2.2</span> <strong>Texture: Gray-Level Co-occurrence Matrix (GLCM):</strong></a></li>
+  </ul></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.3</span> Reflection</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">3.4</span> References</a></li>
   </ul>
@@ -194,7 +204,7 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Technologies: Pre-processing</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Technologies: Corrections</span></h1>
 </div>
 
 
@@ -209,13 +219,12 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 
 </header>
 
-<p>TBD…</p>
 <section id="summary" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> Summary</h2>
 <table class="table">
 <colgroup>
-<col style="width: 32%">
-<col style="width: 67%">
+<col style="width: 8%">
+<col style="width: 91%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -226,27 +235,27 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 <tbody>
 <tr class="odd">
 <td><strong>Remote Sensing Evolution with Landsat 9</strong></td>
-<td>A historical journey highlighting the development of remote sensing technology, focusing on Landsat 9 and the significant contributions of Virginia Norwood. Initially, NASA preferred analog RBV cameras for remote sensing, capturing green, red, and NIR spectra. Norwood advocated for a digital Multispectral Scanner (MSS), foreseeing its potential to capture both visible and invisible wavelengths, leading to the adoption of MSS as a standard for future remote sensing endeavors.</td>
+<td>Initially, NASA preferred analog RBV cameras for remote sensing, capturing green, red, and NIR spectra. Norwood advocated for a digital Multispectral Scanner (MSS), foreseeing its potential to capture both visible and invisible wavelengths, leading to the adoption of MSS as a standard for future remote sensing endeavors.</td>
 </tr>
 <tr class="even">
 <td><strong>Data Corrections and Pre-processing</strong></td>
-<td>Detailed exploration of essential pre-processing steps necessary for remote sensing data usability, including geometric, atmospheric, orthorectification/topographic, and radiometric corrections. These corrections address errors introduced by sensor imperfections, atmospheric conditions, Earth’s rotation, and perspective distortions due to elevation and view angle, ensuring the accuracy and reliability of the remote sensing data.</td>
+<td>Essential pre-processing steps necessary for remote sensing data usability. These corrections ensure the accuracy and reliability of the remote sensing data.</td>
 </tr>
 <tr class="odd">
 <td><em>Radiometric Calibration and Remote Sensing Jargon</em></td>
-<td>Clarification of terms like Digital Number (DN), radiance, and reflectance, explaining the calibration process that converts DNs into meaningful spectral radiance values.</td>
+<td>Clarification of terms like <strong>Digital Number (DN), radiance, and reflectance</strong>, explaining the calibration process that converts DNs into meaningful spectral radiance values.</td>
 </tr>
 <tr class="even">
 <td><em>Atmospheric Correction Types</em></td>
-<td>Explores atmospheric correction methods, distinguishing between relative and absolute approaches to adjust imagery for atmospheric influences. Techniques include Dark Object Subtraction (DOS), Psuedo-invariant Features (PIFs), and use of atmospheric radiative transfer models like MODTRAN and 6S. These corrections are pivotal for accurate earth surface representation, especially when deriving biophysical parameters or comparing data across time and space.</td>
+<td>Explores atmospheric correction methods, distinguishing between relative and absolute approaches to adjust imagery for atmospheric influences. Techniques include <strong>Dark Object Subtraction (DOS), Psuedo-invariant Features (PIFs)</strong>, and use of atmospheric radiative transfer models like MODTRAN and 6S. These corrections are pivotal for accurate earth surface representation, especially when deriving biophysical parameters or comparing data across time and space.</td>
 </tr>
 <tr class="odd">
 <td><em>Orthorectification and Topographic Correction</em></td>
-<td>Focuses on adjusting images for relief displacement caused by terrain, ensuring that imagery accurately represents the Earth’s surface as if viewed directly from above. Utilizes sensor geometry and elevation models, alongside cosine correction and other mathematical models, to correct for distortions, a crucial step for applications requiring precise location accuracy.</td>
+<td>Focuses on adjusting images for relief displacement caused by terrain, ensuring that imagery accurately represents the Earth’s surface as if viewed directly from above. Utilizes sensor geometry and elevation models, alongside <strong>cosine correction and other mathematical models</strong>, to correct for distortions.</td>
 </tr>
 <tr class="even">
 <td><strong>Data Joining and Enhancement</strong></td>
-<td>The process involves mosaicking to create seamless imagery, with techniques like feathering and histogram matching to ensure consistency across images. Enhancements such as contrast adjustment, filtering, PCA, texture analysis, and fusion (e.g., pan-sharpening) are employed to improve image quality, interpretability, and application relevance. These techniques help in highlighting specific features, reducing data dimensionality, and integrating data from multiple sensors, thereby enhancing the utility of remote sensing imagery for various applications.</td>
+<td>The process involves mosaicking to create seamless imagery, with techniques like feathering and histogram matching to ensure consistency across images. Enhancements such as <strong>contrast adjustment, filtering, PCA, texture analysis, and fusion</strong> (e.g., pan-sharpening) are employed to improve image quality, interpretability, and application relevance. These techniques help in highlighting specific features, reducing data dimensionality, and integrating data from multiple sensors, thereby enhancing the utility of remote sensing imagery for various applications.</td>
 </tr>
 </tbody>
 </table>
@@ -304,21 +313,71 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 </section>
 <section id="applications" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">3.2</span> Applications</h2>
-<ul>
-<li><p><strong>Atmospheric Correction</strong>:</p></li>
-<li><p><strong>Geometric Correction</strong>:</p></li>
-<li><p><strong>Mosaicking</strong>:</p></li>
-<li><p><strong>Image Enhancements</strong>:</p></li>
-<li><p><strong>Data Fusion</strong>:</p></li>
-</ul>
+<p>This week’s practical content is very rich. This note will specifically document the Enhancements section of the practical, focusing on the Ratio and Texture aspects.</p>
+<section id="ratio-normalised-difference-vegetation-index-ndvi" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="ratio-normalised-difference-vegetation-index-ndvi"><span class="header-section-number">3.2.1</span> <strong>Ratio: Normalised Difference Vegetation Index (NDVI):</strong></h3>
+<p>The Normalized Difference Vegetation Index (NDVI) is a widely used remote sensing index that serves as a key indicator for assessing the health, coverage, and condition of vegetation on the Earth’s surface. NDVI capitalizes on the distinct absorption and reflection properties of vegetation, particularly the contrast between the red (visible) and near-infrared (NIR) bands of sunlight. Active vegetation reflects more sunlight in the near-infrared band and absorbs more in the red band, making NDVI an ideal measure for gauging vegetation health (Zeng et al.&nbsp;2022).</p>
+<p>The values of NDVI range from -1 to 1, with higher values (closer to 1) indicating healthy, thriving vegetation, and lower values (closer to -1) suggesting bare soil or no vegetation cover, while values around 0 typically represent low vegetation cover or urbanized areas.</p>
+<p>It’s calculated as follows: <span class="math inline">\(NDVI = \frac{(NIR - Red)}{(NIR + Red)}\)</span></p>
+<p>The image below shows the NDVI for Accra in Ghana using Landsat imagery from 2024.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/000010.png" class="img-fluid figure-img" style="width:85.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>It can be noticed from the figure that the boundary between the city and the sea (water system) is not very clear… Additionally, the areas depicted in white, where the NDVI values are the lowest, have been identified through research as salt lake regions. This outcome is likely due to the high reflectance rates associated with these areas.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/000014.png" class="img-fluid figure-img" style="width:85.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>By extracting specific areas where the NDVI is equal to or greater than 0.2, the imagery reveals cities and water bodies in white, enhancing our ability to discern the distribution of vegetation. Additionally, it allows for the observation of a distinct difference in the NDVI values between the west (forested areas) and the east (farmlands), likely reflecting variations in vegetation density and health.</p>
+</section>
+<section id="texture-gray-level-co-occurrence-matrix-glcm" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="texture-gray-level-co-occurrence-matrix-glcm"><span class="header-section-number">3.2.2</span> <strong>Texture: Gray-Level Co-occurrence Matrix (GLCM):</strong></h3>
+<p>Texture GLCM (Gray-Level Co-occurrence Matrix) is a method used to analyze the texture of images. It characterizes the texture properties of an image by examining the spatial relationships of gray levels within it. GLCM is a statistical method that constructs a matrix by calculating the co-occurrence frequency of pixel pairs with specific gray levels at a certain distance and direction. This matrix reflects the distribution of different combinations of gray levels in the image, thereby describing its texture characteristics (Lan &amp; Liu 2018).</p>
+<p>Continuing the analysis of textures in the Accra region, this step indeed consumed a significant amount of time… I’ve realized the significance of creating a study area polygon in QGIS~</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/000018.png" class="img-fluid figure-img" style="width:85.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>According to the color scale, dark green corresponds to higher values, indicating that regions of dark green in the image represent areas with a higher degree of texture homogeneity. These dark green areas suggest a consistent and uniform surface characteristic, which upon verification, are largely vegetation and water bodies. In contrast, areas in yellow signify lower homogeneity, pointing to more complex or varied surface features, often associated with urban built-up areas.</p>
+<p>Of particular interest is the ocean region in the lower right corner of the image, which also exhibits a heterogeneous texture, possibly influenced by the state of the sea surface. This suggests that for practical research, integrating GIS-related classification data for further analysis might be necessary to avoid potential misinterpretations.</p>
+</section>
 </section>
 <section id="reflection" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
-<p>The strategic application of advanced remote sensing techniques has the potential to revolutionize our understanding and management of urban environments…</p>
-<p>The challenge lies in harnessing this complexity to deliver clear, actionable insights for urban planning and environmental management, ensuring that the sophistication of the data translates into tangible benefits for urban communities and ecosystems…</p>
+<p>Integrating remote sensing and Geographic Information Systems (GIS) represents a new frontier in the field of image classification (Lu &amp; Weng 2007). This integrated approach leverages the unique advantages of each system to enhance the accuracy and efficiency of classification, overcoming the limitations of using a single technology in addressing complex land cover classification challenges.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/00001.png" class="img-fluid figure-img" style="width:85.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>I have come across a paper by Lan &amp; Liu (2018) which introduces a method that utilizes GIS and domain knowledge to determine multi-scale windows for GLCM texture descriptors, significantly improving the accuracy of high-resolution remote sensing image classification. The success of this method lies in its ability to extract geographic domain knowledge from different GIS information layers (such as topographic maps, Digital Elevation Models (DEM), land use maps, etc.) and the spatial data mining of this information, which in turn influences the selection of scale parameters for GLCM texture features. This insight profoundly impacted me: GIS and remote sensing technologies are not just tools for data collection and processing, but also serve as a bridge connecting data to the deeper relationships of geographic phenomena.</p>
+<p>This realization led me to understand that to fully exploit the potential of remote sensing and GIS data, we must step beyond traditional thinking frameworks and adopt interdisciplinary approaches to problem-solving. For instance, combining remote sensing techniques with machine learning algorithms can significantly enhance the accuracy of classification and prediction; meanwhile, the spatial analysis capabilities of GIS can provide the necessary geographic context for these algorithms, helping us better understand and interpret model results. Furthermore, integrating domain knowledge not only enhances the accuracy of data analysis but also offers new perspectives for understanding complex geographic phenomena.</p>
 </section>
 <section id="references" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="references"><span class="header-section-number">3.4</span> References</h2>
+<p>Lan, Z. &amp; Liu, Y. (2018). Study on multi-scale window determination for GLCM texture description in high-resolution remote sensing image geo-analysis supported by GIS and domain knowledge. ISPRS International Journal of Geo-Information, 7(5), pp.175.</p>
+<p>Lu, D. &amp; Weng, Q. (2007). A survey of image classification methods and techniques for improving classification performance. International Journal of Remote Sensing, 28(5), pp.823-870.</p>
+<p>Zeng, Y. et al.&nbsp;(2022). Optical vegetation indices for monitoring terrestrial ecosystems globally. Remote Sensing Applications: Society and Environment, 3(7), pp.477–493.</p>
 
 
 </section>
