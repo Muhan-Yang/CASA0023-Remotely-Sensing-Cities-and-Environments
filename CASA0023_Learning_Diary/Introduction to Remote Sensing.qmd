@@ -3,7 +3,7 @@
 ## Summary
 
 |                               |                                                                                                    |
-|------------------|------------------------------------------------------|
+|-------------------|-----------------------------------------------------|
 | **Key Aspect**                | **Description**                                                                                    |
 | **Definitions**               | Remote sensing as a technique for collecting Earth's surface information from a distance.          |
 | **Platforms**                 | Satellites, planes, drones ("spectroradiometer"in a lab or in the field)used for data acquisition. |
@@ -227,6 +227,8 @@ knitr::include_graphics(here::here("images", "Rplot01.png"))
 
 *Randomly selected various land use types in Cape Town for a comparative analysis of their spectral characteristics*
 
+This figure represents the distribution of the spectral response of different feature types, as well as their overlap, by means of shaded areas of different colours. This distribution can help us to identify and differentiate between the feature types. Through such analysis, we can better understand the spectral behaviour of each feature type, which in turn can be used for classification, monitoring and other surface analysis tasks.
+
 ### Practical Application of RS
 
 -   **Urban Planning and Infrastructure Monitoring**
@@ -287,14 +289,14 @@ GIS Geography, n.d. Remote Sensing Earth Observation Guide. Available at: <https
 
 iMathWorks, n.d. How do electromagnetic waves wave. Available at: <https://imathworks.com/physics/physics-how-do-electromagnetic-waves-wave/> \[Accessed 13 January 2024\].
 
-Munshi, T., 2013. Built form, Travel Behaviour, and Low Carbon Development in Ahmedabad, India. DOI: 10.13140/2.1.1217.9845.
+Munshi, T. (2013). Built form, Travel Behaviour, and Low Carbon Development in Ahmedabad, India. DOI: 10.13140/2.1.1217.9845.
 
-Soni, D., 2018. Estimation of Rainfall-Runoff in a Watershed Using Remote Sensing and GIS.
+Soni, D. (2018). Estimation of Rainfall-Runoff in a Watershed Using Remote Sensing and GIS.
 
-Spatial Post, 2023. Types of Platforms In Remote Sensing: A Comprehensive Guide. Available at: <https://www.spatialpost.com/types-of-platforms-in-remote-sensing/#google_vignette> \[Accessed 13 January 2024\].
+Spatial Post. (2023). Types of Platforms In Remote Sensing: A Comprehensive Guide. Available at: <https://www.spatialpost.com/types-of-platforms-in-remote-sensing/#google_vignette> \[Accessed 13 January 2024\].
 
-Tempfli, K. et al., 2009. Principles of remote sensing: an introductory textbook. Enschede: International Institute for Geo-Information Science and Earth Observation.
+Tempfli, K. et al. (2009). Principles of remote sensing: an introductory textbook. Enschede: International Institute for Geo-Information Science and Earth Observation.
 
-Toth, C., 2018. The Future of Remote Sensing: Harnessing the Data Revolution. *GeoActa*, 42(2), pp.1-6.
+Toth, C. (2018). The Future of Remote Sensing: Harnessing the Data Revolution. *GeoActa*, 42(2), pp.1-6.
 
-USGS, n.d. What is Radiometric Resolution? Available at: <https://www.usgs.gov/faqs/what-radiometric-resolution> \[Accessed 14 January 2024\]. 
+USGS. (n.d). What is Radiometric Resolution? Available at: <https://www.usgs.gov/faqs/what-radiometric-resolution> \[Accessed 14 January 2024\]. 

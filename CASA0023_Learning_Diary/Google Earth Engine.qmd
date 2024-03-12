@@ -1,0 +1,61 @@
+# Introduction to Google Earth Engine
+
+## Summary
+
+This week's focus was on understanding Google Earth Engine (GEE), a robust geospatial processing service that has revolutionized the way we perform large-scale environmental analyses. It provides the capability to analyze vast datasets on a planetary scale, delivering results rapidly, which is a significant advancement over traditional methods.
+
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| **Feature Category**             | **Detailed Description**                                                                                                                   |
++==================================+============================================================================================================================================+
+| **Data Processing Capabilities** | \- **Geospatial Analysis Scale**: Allows users to perform geospatial analysis at a planetary scale.                                        |
+|                                  |                                                                                                                                            |
+|                                  | \- **Data Storage**: Data is stored on servers, facilitating the processing of large datasets.                                             |
+|                                  |                                                                                                                                            |
+|                                  | \- **Code Execution**: Users' written code can be directly applied to data.                                                                |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| **Data Types**                   | \- **Images (Raster Data)**: Referred to as **`Image`** in GEE, containing multiple bands.                                                 |
+|                                  |                                                                                                                                            |
+|                                  | \- **Features (Vector Data)**: Known as **`Feature`** in GEE, including geometry and attributes.                                           |
+|                                  |                                                                                                                                            |
+|                                  | \- **Image Collection**: Called **`ImageCollection`**.                                                                                     |
+|                                  |                                                                                                                                            |
+|                                  | \- **Feature Collection**: Termed **`FeatureCollection`**.                                                                                 |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| **Technical Aspects**            | \- **JavaScript-Based**: GEE uses the JavaScript language, with similarities and differences compared to Python and R.                     |
+|                                  |                                                                                                                                            |
+|                                  | \- **Client vs. Server Side**: Differentiates between code running in the browser (client-side) and code running on the server.            |
+|                                  |                                                                                                                                            |
+|                                  | \- **Mapping Functions and Loops**: Recommends using mapping functions over loops for server-side operations.                              |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| **Practical Functions**          | \- **Data Manipulation**: GEE offers concepts of objects, classes, and methods for easy loading and manipulation of data.                  |
+|                                  |                                                                                                                                            |
+|                                  | \- **Spatial Operations**: Includes geometry operations, machine learning, regression analysis, etc.                                       |
+|                                  |                                                                                                                                            |
+|                                  | \- **Image Reduction**: GEE provides functions for aggregating data, performing regional statistics, and conducting neighborhood analysis. |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+
+### Key Concepts and Terminology
+
+GEE operates on two main types of data: raster (Image) and vector (Feature), each serving different purposes but essential for comprehensive spatial analysis. An Image in GEE refers to raster data with bands, while a Feature represents vector data comprising geometry and attributes. These are organized into collections for efficient processing: ImageCollection for rasters and FeatureCollection for vectors.
+
+### GEE's Programming Language: JavaScript
+
+GEE utilizes JavaScript for coding, which introduces a few distinctions from other programming languages like Python and R. Variables are declared with **`var`**, and code blocks end with a semicolon (**`;`**). JavaScript objects, similar to dictionaries, are crucial for structuring data and functions within GEE.
+
+### Practical Applications and Functions in GEE
+
+GEE excels in various geospatial operations, from simple mappings to complex machine learning models. This versatility is showcased through functions like **`map()`** and **`reduce()`**, which allow for efficient data manipulation and analysis across large datasets. Specifically, **`reduce()`** functions are used to aggregate data, offering insights through statistical measures like mean, sum, and median over selected regions or neighborhoods.
+
+### Image and Feature Collections
+
+A practical understanding of GEE involves working with image and feature collections. Filtering these collections by date, region, or specific attributes enables targeted analyses, such as examining land cover changes over time or spatial patterns in environmental variables.
+
+### Advanced Analysis: Regression and Reducers
+
+GEE supports advanced statistical analyses, including **linear regression** models that help in understanding trends and relationships within geospatial data. The concept of reducers is central to GEE, facilitating the aggregation of data for comprehensive analysis. **Reducers** can be applied to both images and feature collections, enabling operations like zonal statistics, which are pivotal for environmental monitoring and assessment.
+
+## Applications
+
+## Reflection
+
+## References
