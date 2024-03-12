@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CASA0023 Remotely Sensing Cities and Environments Learning Diary - 4&nbsp; Policy: Coastal Erosion Management in Ghana</title>
+<title>CASA0023 Remotely Sensing Cities and Environments Learning Diary - 5&nbsp; Introduction to Google Earth Engine</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Google Earth Engine.html" rel="next">
-<link href="./Corrections.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./Policy Coastal Erosion Management in Ghana.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -109,7 +109,7 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Policy Coastal Erosion Management in Ghana.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Policy: Coastal Erosion Management in Ghana</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Google Earth Engine.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Introduction to Google Earth Engine</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -155,13 +155,13 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Policy Coastal Erosion Management in Ghana.html" class="sidebar-item-text sidebar-link active">
+  <a href="./Policy Coastal Erosion Management in Ghana.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Policy: Coastal Erosion Management in Ghana</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Google Earth Engine.html" class="sidebar-item-text sidebar-link">
+  <a href="./Google Earth Engine.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Introduction to Google Earth Engine</span></span></a>
   </div>
 </li>
@@ -181,28 +181,26 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">4.1</span> Summary</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">5.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#background-of-coastal-retreat" id="toc-background-of-coastal-retreat" class="nav-link" data-scroll-target="#background-of-coastal-retreat"><span class="header-section-number">4.1.1</span> Background of Coastal Retreat</a></li>
-  <li><a href="#local-government-policy-overview" id="toc-local-government-policy-overview" class="nav-link" data-scroll-target="#local-government-policy-overview"><span class="header-section-number">4.1.2</span> Local Government Policy Overview</a></li>
-  <li><a href="#alignment-with-united-nations-sdgs" id="toc-alignment-with-united-nations-sdgs" class="nav-link" data-scroll-target="#alignment-with-united-nations-sdgs"><span class="header-section-number">4.1.3</span> Alignment with United Nations SDGs</a></li>
+  <li><a href="#key-concepts-and-terminology" id="toc-key-concepts-and-terminology" class="nav-link" data-scroll-target="#key-concepts-and-terminology"><span class="header-section-number">5.1.1</span> Key Concepts and Terminology</a></li>
+  <li><a href="#gees-programming-language-javascript" id="toc-gees-programming-language-javascript" class="nav-link" data-scroll-target="#gees-programming-language-javascript"><span class="header-section-number">5.1.2</span> GEE’s Programming Language: JavaScript</a></li>
+  <li><a href="#practical-applications-and-functions-in-gee" id="toc-practical-applications-and-functions-in-gee" class="nav-link" data-scroll-target="#practical-applications-and-functions-in-gee"><span class="header-section-number">5.1.3</span> Practical Applications and Functions in GEE</a></li>
+  <li><a href="#image-and-feature-collections" id="toc-image-and-feature-collections" class="nav-link" data-scroll-target="#image-and-feature-collections"><span class="header-section-number">5.1.4</span> Image and Feature Collections</a></li>
+  <li><a href="#advanced-analysis-regression-and-reducers" id="toc-advanced-analysis-regression-and-reducers" class="nav-link" data-scroll-target="#advanced-analysis-regression-and-reducers"><span class="header-section-number">5.1.5</span> Advanced Analysis: Regression and Reducers</a></li>
   </ul></li>
-  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">4.2</span> Applications</a>
-  <ul class="collapse">
-  <li><a href="#accra-as-a-case-study-in-coastal-erosion" id="toc-accra-as-a-case-study-in-coastal-erosion" class="nav-link" data-scroll-target="#accra-as-a-case-study-in-coastal-erosion"><span class="header-section-number">4.2.1</span> Accra as a Case Study in Coastal Erosion</a></li>
-  <li><a href="#leveraging-remote-sensing-for-coastal-management" id="toc-leveraging-remote-sensing-for-coastal-management" class="nav-link" data-scroll-target="#leveraging-remote-sensing-for-coastal-management"><span class="header-section-number">4.2.2</span> Leveraging Remote Sensing for Coastal Management</a></li>
-  </ul></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">4.3</span> Reflection</a></li>
-  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">4.4</span> Reference</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">5.2</span> Applications</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">5.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">5.4</span> References</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Muhan-Yang/CASA0023-Remotely-Sensing-Cities-and-Environments/edit/main/Policy Coastal Erosion Management in Ghana.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/Muhan-Yang/CASA0023-Remotely-Sensing-Cities-and-Environments/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Muhan-Yang/CASA0023-Remotely-Sensing-Cities-and-Environments/edit/main/Google Earth Engine.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/Muhan-Yang/CASA0023-Remotely-Sensing-Cities-and-Environments/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Policy: Coastal Erosion Management in Ghana</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Introduction to Google Earth Engine</span></h1>
 </div>
 
 
@@ -217,125 +215,77 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 
 </header>
 
-<section id="summary" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.1</span> Summary</h2>
-<section id="background-of-coastal-retreat" class="level3" data-number="4.1.1">
-<h3 data-number="4.1.1" class="anchored" data-anchor-id="background-of-coastal-retreat"><span class="header-section-number">4.1.1</span> Background of Coastal Retreat</h3>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/pic2-01.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/pic1-01.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><em>Ghana’s coastline, swallowed by the sea Source: The UNESCO Courier</em></p>
-<p>Ghana’s coastline stretches over 550 kilometers and is crucial to the country’s socio-economic fabric, with significant activities like fishing, tourism, and industry. However, this coastal region faces severe erosion, with land receding at alarming rates due to <strong>natural processes exacerbated by human activities</strong>. Factors contributing to the erosion include rising <strong>sea levels linked to global warming, unchecked industrial activities, and infrastructure development.</strong> This has led to the loss of land, negatively impacting livelihoods, cultural heritage, and biodiversity.</p>
-<p><em>Video: Erosion wearing down Ghana’s coast</em></p>
-<div class="cell" data-layout-align="center" data-hash="Policy-Coastal-Erosion-Management-in-Ghana_cache/html/unnamed-chunk-3_68be7f8241e722e43757637023952069">
-<iframe src="https://www.youtube.com/embed/w7Y_-DUGfuI?si=R8m5oDLfOsuWrAHM" width="672" height="400px" data-external="1">
-</iframe>
-</div>
+<section id="summary" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.1</span> Summary</h2>
+<p>This week’s focus was on understanding Google Earth Engine (GEE), a robust geospatial processing service that has revolutionized the way we perform large-scale environmental analyses. It provides the capability to analyze vast datasets on a planetary scale, delivering results rapidly, which is a significant advancement over traditional methods.</p>
+<table class="table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 80%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Feature Category</strong></th>
+<th><strong>Detailed Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Data Processing Capabilities</strong></td>
+<td><p>- <strong>Geospatial Analysis Scale</strong>: Allows users to perform geospatial analysis at a planetary scale.</p>
+<p>- <strong>Data Storage</strong>: Data is stored on servers, facilitating the processing of large datasets.</p>
+<p>- <strong>Code Execution</strong>: Users’ written code can be directly applied to data.</p></td>
+</tr>
+<tr class="even">
+<td><strong>Data Types</strong></td>
+<td><p>- <strong>Images (Raster Data)</strong>: Referred to as <strong><code>Image</code></strong> in GEE, containing multiple bands.</p>
+<p>- <strong>Features (Vector Data)</strong>: Known as <strong><code>Feature</code></strong> in GEE, including geometry and attributes.</p>
+<p>- <strong>Image Collection</strong>: Called <strong><code>ImageCollection</code></strong>.</p>
+<p>- <strong>Feature Collection</strong>: Termed <strong><code>FeatureCollection</code></strong>.</p></td>
+</tr>
+<tr class="odd">
+<td><strong>Technical Aspects</strong></td>
+<td><p>- <strong>JavaScript-Based</strong>: GEE uses the JavaScript language, with similarities and differences compared to Python and R.</p>
+<p>- <strong>Client vs.&nbsp;Server Side</strong>: Differentiates between code running in the browser (client-side) and code running on the server.</p>
+<p>- <strong>Mapping Functions and Loops</strong>: Recommends using mapping functions over loops for server-side operations.</p></td>
+</tr>
+<tr class="even">
+<td><strong>Practical Functions</strong></td>
+<td><p>- <strong>Data Manipulation</strong>: GEE offers concepts of objects, classes, and methods for easy loading and manipulation of data.</p>
+<p>- <strong>Spatial Operations</strong>: Includes geometry operations, machine learning, regression analysis, etc.</p>
+<p>- <strong>Image Reduction</strong>: GEE provides functions for aggregating data, performing regional statistics, and conducting neighborhood analysis.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="key-concepts-and-terminology" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="key-concepts-and-terminology"><span class="header-section-number">5.1.1</span> Key Concepts and Terminology</h3>
+<p>GEE operates on two main types of data: raster (Image) and vector (Feature), each serving different purposes but essential for comprehensive spatial analysis. An Image in GEE refers to raster data with bands, while a Feature represents vector data comprising geometry and attributes. These are organized into collections for efficient processing: ImageCollection for rasters and FeatureCollection for vectors.</p>
 </section>
-<section id="local-government-policy-overview" class="level3" data-number="4.1.2">
-<h3 data-number="4.1.2" class="anchored" data-anchor-id="local-government-policy-overview"><span class="header-section-number">4.1.2</span> Local Government Policy Overview</h3>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/pic3-01.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>In response to these challenges, the Ghanaian government has developed and implemented policies aimed at mitigating coastal erosion. <a href="http://maps.cersgis.org/nipportal/POLICIES/NATIONAL_ENVIRONMENTAL_POLICY_(MAIN).pdf">Ghana’s National Environmental Policy</a> now mentions marine and coastal degradation as one of the country’s environmental challenges.The “<a href="https://www.mwh.gov.gh/wp-content/uploads/2019/05/MEET-THE-PRESS-high-light-web-1.pdf">Coastal Management Plan</a>” focuses on constructing seawalls at critical points along the coast to protect against erosion. Moreover, the “<a href="https://nupdb.urbanpolicyplatform.org/listings/Ghana">National Urban Policy Framework - Ghana</a>” discusses broader urban challenges, including coastal erosion, and emphasizes the socio-economic impacts and the importance of an integrated approach to urban management.</p>
-<ul>
-<li><p><strong>Policy Initiatives for Achieving Objective 4: Improve the Quality of the Urban Environment</strong></p>
-<p><strong>...</strong></p>
-<p><u>Formulate and implement coastal management plans to achieve coastal revegetation and erosion control in degraded and neglected coastal towns.</u></p></li>
-<li><p><strong>Policy Initiatives for Achieving Objective 5: Ensure Effective Planning and Management of Urban Growth and Expansion</strong></p>
-<p><strong>...</strong></p>
-<p><u>Strengthen the use of remote sensing (such as aerial photographs and satellite images) and Geographic Information Systems (GIS) to enhance urban development and management.</u></p></li>
-</ul>
-<p>These initiatives underscore the government’s dedication to tackling coastal erosion by combining infrastructural interventions with sustainable management approaches.</p>
+<section id="gees-programming-language-javascript" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="gees-programming-language-javascript"><span class="header-section-number">5.1.2</span> GEE’s Programming Language: JavaScript</h3>
+<p>GEE utilizes JavaScript for coding, which introduces a few distinctions from other programming languages like Python and R. Variables are declared with <strong><code>var</code></strong>, and code blocks end with a semicolon (<strong><code>;</code></strong>). JavaScript objects, similar to dictionaries, are crucial for structuring data and functions within GEE.</p>
 </section>
-<section id="alignment-with-united-nations-sdgs" class="level3" data-number="4.1.3">
-<h3 data-number="4.1.3" class="anchored" data-anchor-id="alignment-with-united-nations-sdgs"><span class="header-section-number">4.1.3</span> Alignment with United Nations SDGs</h3>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/pic4-01.png" class="img-fluid figure-img" style="width:90.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>Ghana’s efforts to manage coastal erosion resonate with several United Nations Sustainable Development Goals (SDGs). Specifically, these efforts align with <strong>Goal 11 (Sustainable Cities and Communities)</strong> by enhancing urban sustainability and living conditions, <strong>Goal 13 (Climate Action)</strong> by addressing a significant effect of climate change, and <strong>Goal 14 (Life Below Water)</strong> by protecting marine ecosystems and biodiversity. These alignments underscore the multifaceted benefits of Ghana’s coastal management policies, extending beyond erosion mitigation to broader environmental and socio-economic improvements.</p>
+<section id="practical-applications-and-functions-in-gee" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="practical-applications-and-functions-in-gee"><span class="header-section-number">5.1.3</span> Practical Applications and Functions in GEE</h3>
+<p>GEE excels in various geospatial operations, from simple mappings to complex machine learning models. This versatility is showcased through functions like <strong><code>map()</code></strong> and <strong><code>reduce()</code></strong>, which allow for efficient data manipulation and analysis across large datasets. Specifically, <strong><code>reduce()</code></strong> functions are used to aggregate data, offering insights through statistical measures like mean, sum, and median over selected regions or neighborhoods.</p>
+</section>
+<section id="image-and-feature-collections" class="level3" data-number="5.1.4">
+<h3 data-number="5.1.4" class="anchored" data-anchor-id="image-and-feature-collections"><span class="header-section-number">5.1.4</span> Image and Feature Collections</h3>
+<p>A practical understanding of GEE involves working with image and feature collections. Filtering these collections by date, region, or specific attributes enables targeted analyses, such as examining land cover changes over time or spatial patterns in environmental variables.</p>
+</section>
+<section id="advanced-analysis-regression-and-reducers" class="level3" data-number="5.1.5">
+<h3 data-number="5.1.5" class="anchored" data-anchor-id="advanced-analysis-regression-and-reducers"><span class="header-section-number">5.1.5</span> Advanced Analysis: Regression and Reducers</h3>
+<p>GEE supports advanced statistical analyses, including <strong>linear regression</strong> models that help in understanding trends and relationships within geospatial data. The concept of reducers is central to GEE, facilitating the aggregation of data for comprehensive analysis. <strong>Reducers</strong> can be applied to both images and feature collections, enabling operations like zonal statistics, which are pivotal for environmental monitoring and assessment.</p>
 </section>
 </section>
-<section id="applications" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">4.2</span> Applications</h2>
-<section id="accra-as-a-case-study-in-coastal-erosion" class="level3" data-number="4.2.1">
-<h3 data-number="4.2.1" class="anchored" data-anchor-id="accra-as-a-case-study-in-coastal-erosion"><span class="header-section-number">4.2.1</span> Accra as a Case Study in Coastal Erosion</h3>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/pic5-01.png" class="img-fluid figure-img" style="width:45.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><em>Coastal erosion along portion of western Accra coast Source:</em> Appeaning Addo et al.&nbsp;(2013)</p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/pic6.jpg" class="img-fluid figure-img" style="width:45.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>Orthogonal transects for rates of change estimations Source: Appeaning Addo et al.&nbsp;(2008)</p>
-<p>Next, Accra was specifically chosen as a case study to explore regional dynamics. The Accra region confronts severe coastal erosion, with substantial land loss affecting livelihoods and infrastructure. From 2005 to 2017, about <a href="https://news.mongabay.com/2022/03/as-rising-seas-destroy-ghanas-coastal-communities-researchers-warn-against-a-seawall-only-solution/">37%</a> of the coastal land succumbed to erosion and flooding. Combining local insights with scientific research has been pivotal in tackling this challenge, revealing an erosion rate of <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6014148/">-0.91 m/year</a>.</p>
-<p>While the Ghanaian government has implemented seawall constructions as a countermeasure, researchers stress the importance of adopting a more comprehensive approach beyond solely relying on structural defenses.</p>
+<section id="applications" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">5.2</span> Applications</h2>
 </section>
-<section id="leveraging-remote-sensing-for-coastal-management" class="level3" data-number="4.2.2">
-<h3 data-number="4.2.2" class="anchored" data-anchor-id="leveraging-remote-sensing-for-coastal-management"><span class="header-section-number">4.2.2</span> Leveraging Remote Sensing for Coastal Management</h3>
-<p>The application of remotely sensed data can play a crucial role in supporting the policy goals set by the Ghanaian government for coastal erosion management. High-resolution optical satellite imagery (e.g., Sentinel-2, Landsat 8, Gaofen-1), Synthetic Aperture Radar (SAR) data (e.g., Sentinel-1), and Digital Elevation Models (DEMs) such as ASTER GDEM and SRTM, offer valuable tools for monitoring, planning, and managing coastal erosion efforts effectively.</p>
-<p><strong>· Monitoring and Assessment</strong>: By regularly comparing high-resolution satellite images, authorities can identify the most severely eroded areas and the rate of erosion. SAR data, capable of penetrating cloud cover, is invaluable for assessing the coastline’s status during and after storm events, providing crucial information for emergency response and recovery efforts.</p>
-<p><strong>· Planning and Implementation</strong>: DEMs offer a three-dimensional representation of the surface, aiding in understanding the erosion process and its impact on coastal landscapes. This information can be used to strategically plan the location and design of seawalls and other protective measures, ensuring they are both effective and environmentally sustainable.</p>
-<p><strong>· Public Engagement and Awareness</strong>: Visualizations created from remotely sensed data can enhance public awareness about coastal erosion. By making this information accessible, the government can foster community participation in coastal protection efforts, aligning with the policy’s emphasis on community involvement.</p>
-<p>Using remote sensing technologies, Ghana can improve coastal resilience, make better decisions, respond faster, and adopt a proactive coastal management strategy. This also includes evaluating the success of seawall constructions, ensuring the effectiveness of coastal protection efforts.</p>
+<section id="reflection" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">5.3</span> Reflection</h2>
 </section>
-</section>
-<section id="reflection" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">4.3</span> Reflection</h2>
-<p>Reflecting on my background as a landscape architecture student, my approach to addressing coastal erosion has traditionally focused on designing landscape features and interventions on a smaller scale to mitigate erosion and enhance the living environment for communities. This perspective emphasized the physical design and creation of spaces that directly interact with the coastal dynamics, such as dunes restoration, vegetation buffers, and community parks that double as protective barriers.</p>
-<p>Now, having learned about the capabilities of remote sensing, I see a broader scope of possibilities for contributing to coastal erosion management. Remote sensing allows for a macro-scale understanding of coastal dynamics, providing data that can inform not only the design of individual landscape projects but also larger, strategic planning efforts. It offers a way to monitor the effectiveness of landscape interventions over time and adapt strategies based on real-world feedback. This integration of technology and design can lead to more resilient and sustainable coastal landscapes.</p>
-<p>As a landscape architecture student, the shift from a micro to a macro perspective, enabled by remote sensing, represents a significant expansion of the tools available to me. It opens up new avenues for collaboration with scientists, policymakers, and communities in the fight against coastal erosion. By combining design principles with cutting-edge technology, I can contribute to creating more effective, adaptive, and holistic solutions that address the root causes of coastal erosion while enhancing the quality of life for affected populations. This learning journey underscores the importance of interdisciplinary approaches in tackling complex environmental challenges.</p>
-</section>
-<section id="reference" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">4.4</span> Reference</h2>
-<p>Appeaning Addo, K., Walkden, M. &amp; Mills, J.P. (2008). Detection, measurement and prediction of shoreline recession in Accra, Ghana. <em>Journal of Photogrammetry and Remote Sensing</em>, 63, pp.543–558.</p>
-<p>Appeaning Addo, K. (2013). Assessing Coastal Vulnerability Index to Climate Change: the Case of Accra – Ghana. In: Proceedings of the 12th International Coastal Symposium, Plymouth, England, <em>Journal of Coastal Research</em>, Special Issue No.&nbsp;65, pp.1892-1897.</p>
-<p>Appeaning Addo, K. &amp; Appeaning Addo, I. (2016). Coastal erosion management in Accra: Combining local knowledge and empirical research. <em>Jàmbá: Journal of Disaster Risk Studies</em>, 8(1), p.274. Available at: <a href="https://jamba.org.za/index.php/jamba/article/view/274" class="uri">https://jamba.org.za/index.php/jamba/article/view/274</a> [Accessed 31 Jan.&nbsp;2024].</p>
-<p>“Ghana’s coastline, swallowed by the sea,” (2021). <em>UNESCO Courier</em>. [online] Available at: <a href="https://courier.unesco.org/en/articles/ghanas-coastline-swallowed-sea" class="uri">https://courier.unesco.org/en/articles/ghanas-coastline-swallowed-sea</a> [Accessed 31 Jan.&nbsp;2024].</p>
-<p>Government of Ghana Ministry of Local Government and Rural Development. (2012). <em>National Urban Policy Framework</em>. Available at: <a href="https://nupdb.urbanpolicyplatform.org/listings/Ghana" class="uri">https://nupdb.urbanpolicyplatform.org/listings/Ghana</a> [Accessed 31 Jan.&nbsp;2024].</p>
-<p>Ministry of Works and Housing. (2019). <em>2019 Meet-the-Press Highlights</em>. [pdf] Available at: <a href="https://www.mwh.gov.gh/wp-content/uploads/2019/05/MEET-THE-PRESS-high-light-web-1.pdf" class="uri">https://www.mwh.gov.gh/wp-content/uploads/2019/05/MEET-THE-PRESS-high-light-web-1.pdf</a> [Accessed 31 Jan.&nbsp;2024].</p>
-<p>United Nations Development Programme. (n.d). <em>Sustainable Development Goals</em>. [online] Available at: <a href="https://www.undp.org/sustainable-development-goals" class="uri">https://www.undp.org/sustainable-development-goals</a> [Accessed 31 Jan.&nbsp;2024].</p>
-<p>Ayisi, E. (2022). <em>As rising seas destroy Ghana’s coastal communities, researchers warn against a seawall-only solution</em>. Mongabay. Available at: <a href="https://news.mongabay.com/2022/03/as-rising-seas-destroy-ghanas-coastal-communities-researchers-warn-against-a-seawall-only-solution/" class="uri">https://news.mongabay.com/2022/03/as-rising-seas-destroy-ghanas-coastal-communities-researchers-warn-against-a-seawall-only-solution/</a> [Accessed 31 Jan.&nbsp;2024].</p>
-<p>Modern Ghana. (n.d). <em>Rising Sea Levels: How coastal dwellers in Accra are coping</em>. [online] Available at: <a href="https://www.modernghana.com/news/1103977/rising-sea-levels-how-coastal-dwellers-in-accra.html" class="uri">https://www.modernghana.com/news/1103977/rising-sea-levels-how-coastal-dwellers-in-accra.html</a> [Accessed 31 Jan.&nbsp;2024].</p>
+<section id="references" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="references"><span class="header-section-number">5.4</span> References</h2>
 
 
 </section>
@@ -691,13 +641,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Corrections.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Technologies: Corrections</span></span>
+      <a href="./Policy Coastal Erosion Management in Ghana.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Policy: Coastal Erosion Management in Ghana</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Google Earth Engine.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Introduction to Google Earth Engine</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
