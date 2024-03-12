@@ -34,6 +34,7 @@ book:
     - Xaringan.qmd
     - Corrections.qmd
     - Policy Coastal Erosion Management in Ghana.qmd
+    - Google Earth Engine.qmd
     - references.qmd
 
 bibliography: references.bib
