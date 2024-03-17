@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CASA0023 Remotely Sensing Cities and Environments Learning Diary - 5&nbsp; Introduction to Google Earth Engine</title>
+<title>CASA0023 Remotely Sensing Cities and Environments Learning Diary - 6&nbsp; Classification</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Classification.html" rel="next">
-<link href="./Policy Coastal Erosion Management in Ghana.html" rel="prev">
+<link href="./Classification2.html" rel="next">
+<link href="./Google Earth Engine.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -109,7 +109,7 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Google Earth Engine.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Introduction to Google Earth Engine</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Classification.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -161,13 +161,13 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Google Earth Engine.html" class="sidebar-item-text sidebar-link active">
+  <a href="./Google Earth Engine.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Introduction to Google Earth Engine</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Classification.html" class="sidebar-item-text sidebar-link">
+  <a href="./Classification.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification</span></span></a>
   </div>
 </li>
@@ -199,26 +199,26 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">5.1</span> Summary</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">6.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#key-concepts-and-terminology" id="toc-key-concepts-and-terminology" class="nav-link" data-scroll-target="#key-concepts-and-terminology"><span class="header-section-number">5.1.1</span> Key Concepts and Terminology</a></li>
-  <li><a href="#gees-programming-language-javascript" id="toc-gees-programming-language-javascript" class="nav-link" data-scroll-target="#gees-programming-language-javascript"><span class="header-section-number">5.1.2</span> GEE’s Programming Language: JavaScript</a></li>
-  <li><a href="#practical-applications-and-functions-in-gee" id="toc-practical-applications-and-functions-in-gee" class="nav-link" data-scroll-target="#practical-applications-and-functions-in-gee"><span class="header-section-number">5.1.3</span> Practical Applications and Functions in GEE</a></li>
-  <li><a href="#image-and-feature-collections" id="toc-image-and-feature-collections" class="nav-link" data-scroll-target="#image-and-feature-collections"><span class="header-section-number">5.1.4</span> Image and Feature Collections</a></li>
-  <li><a href="#advanced-analysis-regression-and-reducers" id="toc-advanced-analysis-regression-and-reducers" class="nav-link" data-scroll-target="#advanced-analysis-regression-and-reducers"><span class="header-section-number">5.1.5</span> Advanced Analysis: Regression and Reducers</a></li>
+  <li><a href="#landsat-data-for-urban-expansion" id="toc-landsat-data-for-urban-expansion" class="nav-link" data-scroll-target="#landsat-data-for-urban-expansion"><span class="header-section-number">6.1.1</span> Landsat Data for Urban Expansion</a></li>
+  <li><a href="#sentinel-3-and-sentinel-5-for-air-pollution-monitoring" id="toc-sentinel-3-and-sentinel-5-for-air-pollution-monitoring" class="nav-link" data-scroll-target="#sentinel-3-and-sentinel-5-for-air-pollution-monitoring"><span class="header-section-number">6.1.2</span> Sentinel-3 and Sentinel-5 for Air Pollution Monitoring</a></li>
+  <li><a href="#hexagonal-grid-system-for-data-integration" id="toc-hexagonal-grid-system-for-data-integration" class="nav-link" data-scroll-target="#hexagonal-grid-system-for-data-integration"><span class="header-section-number">6.1.3</span> Hexagonal Grid System for Data Integration</a></li>
+  <li><a href="#forest-watcher-app-for-illegal-logging-monitoring" id="toc-forest-watcher-app-for-illegal-logging-monitoring" class="nav-link" data-scroll-target="#forest-watcher-app-for-illegal-logging-monitoring"><span class="header-section-number">6.1.4</span> Forest Watcher App for Illegal Logging Monitoring</a></li>
+  <li><a href="#classification-and-regression-trees-cart-and-random-forests" id="toc-classification-and-regression-trees-cart-and-random-forests" class="nav-link" data-scroll-target="#classification-and-regression-trees-cart-and-random-forests"><span class="header-section-number">6.1.5</span> Classification and Regression Trees (CART) and Random Forests</a></li>
   </ul></li>
-  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">5.2</span> Applications</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">5.3</span> Reflection</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">5.4</span> References</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">6.2</span> Applications</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6.4</span> References</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Muhan-Yang/CASA0023-Remotely-Sensing-Cities-and-Environments/edit/main/Google Earth Engine.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/Muhan-Yang/CASA0023-Remotely-Sensing-Cities-and-Environments/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Muhan-Yang/CASA0023-Remotely-Sensing-Cities-and-Environments/edit/main/Classification.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/Muhan-Yang/CASA0023-Remotely-Sensing-Cities-and-Environments/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Introduction to Google Earth Engine</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification</span></h1>
 </div>
 
 
@@ -233,82 +233,97 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 
 </header>
 
-<section id="summary" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.1</span> Summary</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gKGOeTFHnKY?si=SKe3e3coPQ_NTISh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
-</iframe>
-<p>This week’s focus was on understanding Google Earth Engine (GEE), a robust geospatial processing service that has revolutionized the way we perform large-scale environmental analyses. It provides the capability to analyze vast datasets on a planetary scale, delivering results rapidly, which is a significant advancement over traditional methods.</p>
+<section id="summary" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> Summary</h2>
 <table class="table">
-<colgroup>
-<col style="width: 19%">
-<col style="width: 80%">
-</colgroup>
 <thead>
 <tr class="header">
-<th><strong>Feature Category</strong></th>
-<th><strong>Detailed Description</strong></th>
+<th><strong>Theme</strong></th>
+<th><strong>Key Points</strong></th>
+<th><strong>Source</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Data Processing Capabilities</strong></td>
-<td><p>- <strong>Geospatial Analysis Scale</strong>: Allows users to perform geospatial analysis at a planetary scale.</p>
-<p>- <strong>Data Storage</strong>: Data is stored on servers, facilitating the processing of large datasets.</p>
-<p>- <strong>Code Execution</strong>: Users’ written code can be directly applied to data.</p></td>
+<td><strong>Urban Expansion</strong></td>
+<td>Significant urban growth in Perth Metropolitan Region from 1990 to 2015, visualized using Landsat data</td>
+<td>MacLachlan et al.&nbsp;2017</td>
 </tr>
 <tr class="even">
-<td><strong>Data Types</strong></td>
-<td><p>- <strong>Images (Raster Data)</strong>: Referred to as <strong><code>Image</code></strong> in GEE, containing multiple bands.</p>
-<p>- <strong>Features (Vector Data)</strong>: Known as <strong><code>Feature</code></strong> in GEE, including geometry and attributes.</p>
-<p>- <strong>Image Collection</strong>: Called <strong><code>ImageCollection</code></strong>.</p>
-<p>- <strong>Feature Collection</strong>: Termed <strong><code>FeatureCollection</code></strong>.</p></td>
+<td><strong>Air Pollution and LULC</strong></td>
+<td>Impact of LULC changes on major air pollutants and land surface temperatures, analyzed using Sentinel-3 and Sentinel-5 data</td>
+<td>Fuldalu and Alta, 2021</td>
 </tr>
 <tr class="odd">
-<td><strong>Technical Aspects</strong></td>
-<td><p>- <strong>JavaScript-Based</strong>: GEE uses the JavaScript language, with similarities and differences compared to Python and R.</p>
-<p>- <strong>Client vs.&nbsp;Server Side</strong>: Differentiates between code running in the browser (client-side) and code running on the server.</p>
-<p>- <strong>Mapping Functions and Loops</strong>: Recommends using mapping functions over loops for server-side operations.</p></td>
+<td><strong>Urban Green Spaces</strong></td>
+<td>Classification and assessment of urban green spaces using a variety of remote sensing techniques, highlighting the importance of hybrid methods and object-based image analysis</td>
+<td>Shahtahmassebi et al.&nbsp;2021</td>
 </tr>
 <tr class="even">
-<td><strong>Practical Functions</strong></td>
-<td><p>- <strong>Data Manipulation</strong>: GEE offers concepts of objects, classes, and methods for easy loading and manipulation of data.</p>
-<p>- <strong>Spatial Operations</strong>: Includes geometry operations, machine learning, regression analysis, etc.</p>
-<p>- <strong>Image Reduction</strong>: GEE provides functions for aggregating data, performing regional statistics, and conducting neighborhood analysis.</p></td>
+<td><strong>Monitoring Forests and Illegal Logging</strong></td>
+<td>Monitoring forest loss and illegal logging in Brazil’s Amapá with Landsat data and the Forest Watcher app</td>
+<td><a href="https://news.mongabay.com/2019/04/how-a-sheriff-in-brazil-is-using-satellites-to-stop-deforestation/">Leonardo Brito, DEMA-AP</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Expert Systems</strong></td>
+<td>Application of expert systems in environmental analysis, combining human knowledge with algorithmic data processing</td>
+<td><a href="https://www.quora.com/What-is-a-knowledge-based-system-in-the-context-of-artificial-intelligence">Aftab Alam</a></td>
+</tr>
+<tr class="even">
+<td><strong>Classification and Regression Trees (CART)</strong></td>
+<td>Application of CART in categorizing continuous and discrete data, including model construction and analysis</td>
+<td><a href="https://www.youtube.com/watch?v=_L39rN6gz7Y">StatQuest</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Overfitting and Model Tuning</strong></td>
+<td>Discussion on strategies to avoid overfitting, such as pruning and Random Forests, and ensuring model reliability and accuracy</td>
+<td>Bellini and Cascella, 2022;</td>
+</tr>
+<tr class="even">
+<td><strong>Image Classification Techniques</strong></td>
+<td>Principles and applications of image classification techniques like Maximum Likelihood Classification and Support Vector Machines</td>
+<td>Núñez et al.&nbsp;2018; <a href="https://towardsdatascience.com/the-kernel-trick-c98cdbcaeb3f#:~:text=The%20%E2%80%9Ctrick%E2%80%9D%20is%20that%20kernel,the%20data%20by%20these%20transformed">Drew Wilimitis</a></td>
 </tr>
 </tbody>
 </table>
-<section id="key-concepts-and-terminology" class="level3" data-number="5.1.1">
-<h3 data-number="5.1.1" class="anchored" data-anchor-id="key-concepts-and-terminology"><span class="header-section-number">5.1.1</span> Key Concepts and Terminology</h3>
-<p>GEE operates on two main types of data: raster (Image) and vector (Feature), each serving different purposes but essential for comprehensive spatial analysis. An Image in GEE refers to raster data with bands, while a Feature represents vector data comprising geometry and attributes. These are organized into collections for efficient processing: ImageCollection for rasters and FeatureCollection for vectors.</p>
+<section id="landsat-data-for-urban-expansion" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="landsat-data-for-urban-expansion"><span class="header-section-number">6.1.1</span> Landsat Data for Urban Expansion</h3>
+<p>Landsat satellite imagery plays a crucial role in monitoring urban expansion. The temporal depth and spatial resolution of Landsat data allow for detailed tracking of urban growth over time. By analyzing satellite images from different years, researchers can identify patterns of urban sprawl, quantify the rate of expansion, and observe changes in land use. The graduating colors in the imagery provide a visual representation of outward expansion, making it easier to communicate the findings to policymakers and the public.</p>
 </section>
-<section id="gees-programming-language-javascript" class="level3" data-number="5.1.2">
-<h3 data-number="5.1.2" class="anchored" data-anchor-id="gees-programming-language-javascript"><span class="header-section-number">5.1.2</span> GEE’s Programming Language: JavaScript</h3>
-<p>GEE utilizes JavaScript for coding, which introduces a few distinctions from other programming languages like Python and R. Variables are declared with <strong><code>var</code></strong>, and code blocks end with a semicolon (<strong><code>;</code></strong>). JavaScript objects, similar to dictionaries, are crucial for structuring data and functions within GEE.</p>
+<section id="sentinel-3-and-sentinel-5-for-air-pollution-monitoring" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="sentinel-3-and-sentinel-5-for-air-pollution-monitoring"><span class="header-section-number">6.1.2</span> Sentinel-3 and Sentinel-5 for Air Pollution Monitoring</h3>
+<p>The Sentinel-3 and Sentinel-5 satellites, part of the European Union’s Copernicus program, offer critical data for studying air pollution and its relation to land use/land cover changes. Sentinel-3 provides Sea and Land Surface Temperature data, which is essential for understanding heat distribution and its impact on air quality. Sentinel-5 Precursor, on the other hand, focuses on monitoring major air pollutants, including nitrogen dioxide, ozone, formaldehyde, sulfur dioxide, methane, carbon monoxide, and aerosols. The integration of these datasets allows researchers to investigate the effects of LULC transformations on air pollution levels, providing insights into how urban planning and environmental policies might mitigate adverse impacts.</p>
 </section>
-<section id="practical-applications-and-functions-in-gee" class="level3" data-number="5.1.3">
-<h3 data-number="5.1.3" class="anchored" data-anchor-id="practical-applications-and-functions-in-gee"><span class="header-section-number">5.1.3</span> Practical Applications and Functions in GEE</h3>
-<p>GEE excels in various geospatial operations, from simple mappings to complex machine learning models. This versatility is showcased through functions like <strong><code>map()</code></strong> and <strong><code>reduce()</code></strong>, which allow for efficient data manipulation and analysis across large datasets. Specifically, <strong><code>reduce()</code></strong> functions are used to aggregate data, offering insights through statistical measures like mean, sum, and median over selected regions or neighborhoods.</p>
+<section id="hexagonal-grid-system-for-data-integration" class="level3" data-number="6.1.3">
+<h3 data-number="6.1.3" class="anchored" data-anchor-id="hexagonal-grid-system-for-data-integration"><span class="header-section-number">6.1.3</span> Hexagonal Grid System for Data Integration</h3>
+<p>The concept of using a hexagonal grid system, as mentioned in the honeycombing technique, represents an innovative approach to integrating and analyzing sensor data from different sources. This method addresses the challenge of spatial heterogeneity in environmental data by providing a uniform framework for data aggregation. The hexagonal shape is preferred over square grids due to its efficiency in covering large areas without overlapping and minimizing distance distortion. This technique enhances the spatial analysis of environmental variables such as land surface temperature, particulate matter (PM2.5), and other pollutants, facilitating more accurate assessments of air quality and LULC impacts.</p>
 </section>
-<section id="image-and-feature-collections" class="level3" data-number="5.1.4">
-<h3 data-number="5.1.4" class="anchored" data-anchor-id="image-and-feature-collections"><span class="header-section-number">5.1.4</span> Image and Feature Collections</h3>
-<p>A practical understanding of GEE involves working with image and feature collections. Filtering these collections by date, region, or specific attributes enables targeted analyses, such as examining land cover changes over time or spatial patterns in environmental variables.</p>
+<section id="forest-watcher-app-for-illegal-logging-monitoring" class="level3" data-number="6.1.4">
+<h3 data-number="6.1.4" class="anchored" data-anchor-id="forest-watcher-app-for-illegal-logging-monitoring"><span class="header-section-number">6.1.4</span> Forest Watcher App for Illegal Logging Monitoring</h3>
+<p>The Forest Watcher app exemplifies the application of mobile technology in environmental conservation. It allows users, including law enforcement and environmental activists, to access Global Forest Watch data in the field, enabling the detection of deforestation and forest degradation in real time. This tool leverages high-resolution satellite imagery and algorithms to identify changes in forest cover. By making this information readily accessible on mobile devices, the app empowers local authorities and communities to take immediate action against illegal logging activities.</p>
 </section>
-<section id="advanced-analysis-regression-and-reducers" class="level3" data-number="5.1.5">
-<h3 data-number="5.1.5" class="anchored" data-anchor-id="advanced-analysis-regression-and-reducers"><span class="header-section-number">5.1.5</span> Advanced Analysis: Regression and Reducers</h3>
-<p>GEE supports advanced statistical analyses, including <strong>linear regression</strong> models that help in understanding trends and relationships within geospatial data. The concept of reducers is central to GEE, facilitating the aggregation of data for comprehensive analysis. <strong>Reducers</strong> can be applied to both images and feature collections, enabling operations like zonal statistics, which are pivotal for environmental monitoring and assessment.</p>
+<section id="classification-and-regression-trees-cart-and-random-forests" class="level3" data-number="6.1.5">
+<h3 data-number="6.1.5" class="anchored" data-anchor-id="classification-and-regression-trees-cart-and-random-forests"><span class="header-section-number">6.1.5</span> Classification and Regression Trees (CART) and Random Forests</h3>
+<p>CART and random forests are powerful machine learning methods used for classification and regression tasks in environmental studies. CART algorithms split the data into subsets based on feature value thresholds, constructing decision trees that model the decision-making process. Random forests improve on this by creating an ensemble of decision trees, each trained on a random subset of the data. This approach reduces the variance of the model, leading to more stable and accurate predictions. In environmental applications, these techniques can classify land cover types, predict pollution levels, or assess the risk of forest fires, among other uses.</p>
 </section>
 </section>
-<section id="applications" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">5.2</span> Applications</h2>
+<section id="applications" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">6.2</span> Applications</h2>
 </section>
-<section id="reflection" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">5.3</span> Reflection</h2>
-<p>This week’s learning experience has been a journey filled with both challenges and discoveries for me. At the outset of my introduction to GEE, I was incredibly excited about its vast data resources and analytical capabilities, yet I also felt puzzled about how to effectively utilize this powerful tool.</p>
-<p>Over the course of the week, I have gained a preliminary understanding of the basic operations of GEE, access to datasets, and simple analysis. Through hands-on practice, I gradually became familiar with the GEE interface and programming syntax, even though this required me to spend additional time learning the basics of JavaScript. I also became aware of the complexities of remote sensing data analysis and the importance of data quality and applicability issues when using GEE for environmental monitoring and land change analysis.</p>
-<p>In summary, this introductory week to GEE has been a challenging journey, but it has also opened a new perspective for me, deepening my understanding of the power and potential of remote sensing data. I look forward to continuing my exploration of GEE, applying the knowledge I have gained to a wider range of environmental monitoring and geographic analysis projects.</p>
+<section id="reflection" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.3</span> Reflection</h2>
+<p>Reflecting on my experiences from CASA0006, where I first delved into machine learning, I see how invaluable that foundational knowledge has been for my current foray into remote sensing applications. The leap from understanding basic machine learning concepts to applying them in the analysis of environmental data and satellite imagery has been both enlightening and empowering.</p>
+<p>The ability to utilize techniques such as Classification and Regression Trees (CART) and random forests in the context of remote sensing has opened up new avenues for me to explore the complexities of our environment. It’s fascinating to see the direct impact of these machine learning tools in interpreting vast datasets, monitoring urban growth, and assessing the health of our ecosystems from a bird’s-eye view.</p>
+<p>This journey has reinforced the idea that the skills and knowledge acquired in machine learning are not just theoretical but highly applicable in solving real-world environmental challenges. It’s a vivid reminder of the importance of interdisciplinary learning and the need to stay curious and adaptable in a rapidly evolving field.</p>
 </section>
-<section id="references" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="references"><span class="header-section-number">5.4</span> References</h2>
+<section id="references" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="references"><span class="header-section-number">6.4</span> References</h2>
+<p>Bellini, V. et al.&nbsp;(2022) ‘Understanding basic principles of artificial intelligence: a practical guide for intensivists’, Acta Biomed, 93, p.&nbsp;2022297.</p>
+<p>Fuladlu, K. &amp; Altan, H. (2021) ‘Examining land surface temperature and relations with the major air pollutants: A remote sensing research in case of Tehran’, Urban Climate, 39, p.&nbsp;100958.</p>
+<p>Gonzales, J. (2019) ‘How a sheriff in Brazil is using satellites to stop deforestation’, [Online]. Available at: <a href="https://news.mongabay.com/2019/04/how-a-sheriff-in-brazil-is-using-satellites-to-stop-deforestation/" class="uri">https://news.mongabay.com/2019/04/how-a-sheriff-in-brazil-is-using-satellites-to-stop-deforestation/</a></p>
+<p>MacLachlan, A. et al.&nbsp;(2017) ‘Urban Growth Dynamics in Perth, Western Australia: Using Applied Remote Sensing for Sustainable Future Planning’, Land, 6(1), p.&nbsp;9.</p>
+<p>Núñez, J.M. et al.&nbsp;(2019) ‘High-Resolution Satellite Imagery Classification for Urban Form Detection’, [Online]. IntechOpen. Available at: https://www.intechopen.com/chapters/64971 (Accessed: 16 March 2024).</p>
+<p>Shahtahmassebi, A.R. et al., 2021. Remote sensing of urban green spaces: A review, <em>Urban Forestry &amp; Urban Greening</em>, årg. 57, s. 126946.</p>
 
 
 </section>
@@ -664,13 +679,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Policy Coastal Erosion Management in Ghana.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Policy: Coastal Erosion Management in Ghana</span></span>
+      <a href="./Google Earth Engine.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Introduction to Google Earth Engine</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Classification.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Classification2.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification2</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
