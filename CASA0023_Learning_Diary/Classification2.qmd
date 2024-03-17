@@ -1,0 +1,82 @@
+# Classification2
+
+Continuing on from last week...
+
+## Summary
+
++-------------------------------+---------------------------------------------+
+| **KEY ASPECT**                | **DETAILS**                                 |
++===============================+=============================================+
+| **Classification Techniques** | \- FCNN mapping                             |
+|                               |                                             |
+|                               | \- Pre-processing importance                |
+|                               |                                             |
+|                               | \- Data normalization                       |
++-------------------------------+---------------------------------------------+
+| **OBIA**                      | \- SLIC algorithm for superpixels           |
+|                               |                                             |
+|                               | \- Spatial distance and color balance       |
++-------------------------------+---------------------------------------------+
+| **Sub-pixel Analysis**        | \- Land cover proportions per pixel         |
+|                               |                                             |
+|                               | \- Reflectance formula application          |
++-------------------------------+---------------------------------------------+
+| **Accuracy Assessment**       | \- Confusion matrices                       |
+|                               |                                             |
+|                               | \- Producer's, user's, and overall accuracy |
+|                               |                                             |
+|                               | \- Spatial cross-validation                 |
++-------------------------------+---------------------------------------------+
+
+### **Dynamic World's Semi-supervised Approach**
+
+-   Divides the globe into regions and biomes.
+
+-   Uses stratified sampling based on NASA MCD12Q1 land cover data and others.
+
+-   Training involved labeling \~4,000 image tiles by experts and 20,000 by non-experts.
+
+### **Classification Techniques**
+
+-   **FCNN (Fully Convolutional Neural Network):** Learns the mapping from estimated probabilities back to input reflectances.
+
+-   **Pre-processing:** Important for data quality, including cloud masking and normalization of data.
+
+-   **Normalization:** Log-transform raw reflectance values and remap to a sigmoid function to equalize highly reflective surfaces.
+
+### **Object-Based Image Analysis (OBIA)**
+
+-   Uses the SLIC algorithm for superpixel generation, focusing on the balance between spatial distance and color homogeneity.
+
+-   Formula for balancing physical distance and color: S (initial point distance), m (compactness), and considerations for Euclidean distance. $$
+    D = \sqrt{{\left(\frac{d_{\text{color}}}{m}\right)^2 }} + \left(\frac{d_{\text{space}}}{S}\right)
+    $$
+
+### **Sub-pixel Analysis**
+
+-   **Spectral Mixture Analysis (SMA):** Determines the proportion of landcover per pixel.
+
+-   Reflectance represented by the sum of endmembers weighted by their fraction: $$
+    p_{\lambda} = \sum_{i=1}^{n} (p_{i\lambda} * f_i) + e_{\lambda}
+    $$
+
+### **Accuracy Assessment**
+
+-   **Producer's Accuracy**: Measures the match between classified data and ground truth, showing how accurately the model identifies classes.
+
+-   **User's Accuracy**: Indicates the reliability of the classification for users, reflecting the likelihood that a classified instance actually represents its assigned class in reality.
+
+-   **Overall Accuracy**: Provides a general measure of the model's performance, representing the total proportion of correctly classified instances.
+
+    To enhance model accuracy assessment, spatial cross-validation addresses **spatial autocorrelation** by ensuring training and testing datasets are spatially independent. The **Kappa Coefficient** measures classification accuracy against chance, with values between -1 and 1. The **balance between recall and precision** is evaluated using the F1-Score, which helps navigate the challenges of false positives and negatives. Additionally, the **Receiver Operating Characteristic (ROC)** Curve and the **Area Under the Curve (AUC)** assess model performance by focusing on true positive rates and minimizing false positives. These techniques collectively offer a detailed framework for a more accurate and comprehensive evaluation of classification models.
+
+## Applications
+
+## Reflection
+
+\
+Reflecting on the importance of spatial autocorrelation in classification models has been a pivotal part of my learning journey in remote sensing. It emphasized how crucial it is to recognize that the data points close to one another are more likely to be similar, a fact that can significantly influence model accuracy if overlooked. This realization brought to light the potential pitfalls of assuming data independence and the necessity for spatial cross-validation to ensure robust model evaluation.
+
+This insight has profoundly shaped my approach to remote sensing data analysis, making me more aware of the underlying spatial patterns and their impact on model performance. It's a reminder that in remote sensing, understanding the data's nature is as crucial as mastering the technical aspects of analysis.
+
+## References

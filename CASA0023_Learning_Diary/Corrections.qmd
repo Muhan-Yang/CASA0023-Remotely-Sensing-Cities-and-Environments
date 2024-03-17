@@ -1,4 +1,4 @@
-# Remote Sensing Technologies: Corrections
+# Corrections
 
 ## Summary
 
@@ -7,8 +7,8 @@
 | **Remote Sensing Evolution with Landsat 9**         | Initially, NASA preferred analog RBV cameras for remote sensing, capturing green, red, and NIR spectra. Norwood advocated for a digital Multispectral Scanner (MSS), foreseeing its potential to capture both visible and invisible wavelengths, leading to the adoption of MSS as a standard for future remote sensing endeavors.                                                                                                                                                                                                                                                 |
 | **Data Corrections and Pre-processing**             | Essential pre-processing steps necessary for remote sensing data usability. These corrections ensure the accuracy and reliability of the remote sensing data.                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | *Radiometric Calibration and Remote Sensing Jargon* | Clarification of terms like **Digital Number (DN), radiance, and reflectance**, explaining the calibration process that converts DNs into meaningful spectral radiance values.                                                                                                                                                                                                                                                                                                                                                                                                     |
-| *Atmospheric Correction Types*                      | Explores atmospheric correction methods, distinguishing between relative and absolute approaches to adjust imagery for atmospheric influences. Techniques include **Dark Object Subtraction (DOS), Psuedo-invariant Features (PIFs)**, and use of atmospheric radiative transfer models like MODTRAN and 6S. These corrections are pivotal for accurate earth surface representation, especially when deriving biophysical parameters or comparing data across time and space.                                                                                                     |
-| *Orthorectification and Topographic Correction*     | Focuses on adjusting images for relief displacement caused by terrain, ensuring that imagery accurately represents the Earth's surface as if viewed directly from above. Utilizes sensor geometry and elevation models, alongside **cosine correction and other mathematical models**, to correct for distortions.                                                                                                                                                                                                                                                                 |
+| *Atmospheric Correction Types*                      | Explores atmospheric correction methods, distinguishing between relative and absolute approaches to adjust imagery for atmospheric influences. Techniques include **Dark Object Subtraction (DOS), Psuedo-invariant Features (PIFs)**, and use of **atmospheric radiative transfer models like MODTRAN and 6S**. These corrections are pivotal for accurate earth surface representation, especially when deriving biophysical parameters or comparing data across time and space.                                                                                                 |
+| *Orthorectification and Topographic Correction*     | Focuses on adjusting images for relief displacement caused by terrain, ensuring that imagery accurately represents the Earth's surface as if viewed directly from above. Utilizes **sensor geometry and elevation models**, alongside **cosine correction and other mathematical models**, to correct for distortions.                                                                                                                                                                                                                                                             |
 | **Data Joining and Enhancement**                    | The process involves mosaicking to create seamless imagery, with techniques like feathering and histogram matching to ensure consistency across images. Enhancements such as **contrast adjustment, filtering, PCA, texture analysis, and fusion** (e.g., pan-sharpening) are employed to improve image quality, interpretability, and application relevance. These techniques help in highlighting specific features, reducing data dimensionality, and integrating data from multiple sensors, thereby enhancing the utility of remote sensing imagery for various applications. |
 
 ### Remote Sensing Data Processing and Correction Formulas
@@ -46,7 +46,7 @@
 
 This week's practical content is very rich. This note will specifically document the Enhancements section of the practical, focusing on the Ratio and Texture aspects.
 
-### **Ratio: Normalised Difference Vegetation Index (NDVI):**
+### **Ratio: Normalised Difference Vegetation Index (NDVI)**
 
 The Normalized Difference Vegetation Index (NDVI) is a widely used remote sensing index that serves as a key indicator for assessing the health, coverage, and condition of vegetation on the Earth's surface. NDVI capitalizes on the distinct absorption and reflection properties of vegetation, particularly the contrast between the red (visible) and near-infrared (NIR) bands of sunlight. Active vegetation reflects more sunlight in the near-infrared band and absorbs more in the red band, making NDVI an ideal measure for gauging vegetation health (Zeng et al. 2022).
 
@@ -68,7 +68,15 @@ knitr::include_graphics(here::here("images", "000014.png"))
 
 By extracting specific areas where the NDVI is equal to or greater than 0.2, the imagery reveals cities and water bodies in white, enhancing our ability to discern the distribution of vegetation. Additionally, it allows for the observation of a distinct difference in the NDVI values between the west (forested areas) and the east (farmlands), likely reflecting variations in vegetation density and health.
 
-### **Texture: Gray-Level Co-occurrence Matrix (GLCM):**
+```{r echo=FALSE, out.width = "85%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "Fig4.png"))
+```
+
+*Spatial distribution of deterministic trends in seasonal photosynthetic activity across Canada and Alaska from 1982 through 2003   Source: (Goetz et al. 2005)*
+
+The study by Goetz et al. (2005) used the Normalized Difference Vegetation Index (NDVI) and other remote sensing data to estimate the biomass of forests in the Arctic region of Alaska and analyzed the impact of climate change on its distribution and variation. Through the analysis of long-term NDVI data, the research revealed a close correlation between forest biomass in the region and climate change, especially noting an increasing trend in forest biomass as regional temperatures rose. Additionally, the study highlighted the significant impact of fire disturbances on forest biomass, with NDVI data being able to monitor the patterns of forest recovery after fires. This research not only demonstrates the application value of NDVI in the science of global change but also emphasizes the importance of remote sensing technology in monitoring the impact of environmental changes on forest ecosystems.
+
+### **Texture: Gray-Level Co-occurrence Matrix (GLCM)**
 
 Texture GLCM (Gray-Level Co-occurrence Matrix) is a method used to analyze the texture of images. It characterizes the texture properties of an image by examining the spatial relationships of gray levels within it. GLCM is a statistical method that constructs a matrix by calculating the co-occurrence frequency of pixel pairs with specific gray levels at a certain distance and direction. This matrix reflects the distribution of different combinations of gray levels in the image, thereby describing its texture characteristics (Lan & Liu 2018).
 
@@ -95,6 +103,8 @@ I have come across a paper by Lan & Liu (2018) which introduces a method that ut
 This realization led me to understand that to fully exploit the potential of remote sensing and GIS data, we must step beyond traditional thinking frameworks and adopt interdisciplinary approaches to problem-solving. For instance, combining remote sensing techniques with machine learning algorithms can significantly enhance the accuracy of classification and prediction; meanwhile, the spatial analysis capabilities of GIS can provide the necessary geographic context for these algorithms, helping us better understand and interpret model results. Furthermore, integrating domain knowledge not only enhances the accuracy of data analysis but also offers new perspectives for understanding complex geographic phenomena.
 
 ## References
+
+Goetz, S. J., Bunn, A. G., Fiske, G. J., & Houghton, R. A. (2005). Satellite-observed photosynthetic trends across boreal North America associated with climate and fire disturbance. Proceedings of the National Academy of Sciences, 102(38), 13521-13525
 
 Lan, Z. & Liu, Y. (2018). Study on multi-scale window determination for GLCM texture description in high-resolution remote sensing image geo-analysis supported by GIS and domain knowledge. ISPRS International Journal of Geo-Information, 7(5), pp.175.
 

@@ -35,6 +35,9 @@ book:
     - Corrections.qmd
     - Policy Coastal Erosion Management in Ghana.qmd
     - Google Earth Engine.qmd
+    - Classification.qmd
+    - Classification2.qmd
+    - SAR.qmd
     - references.qmd
 
 bibliography: references.bib

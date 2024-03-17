@@ -1,0 +1,58 @@
+# Classification
+
+## Summary
+
+| **Theme**                                      | **Key Points**                                                                                                                                                                  | **Source**                                                                                                                                                                                         |
+|------------------|-------------------------------------|------------------|
+| **Urban Expansion**                            | Significant urban growth in Perth Metropolitan Region from 1990 to 2015, visualized using Landsat data                                                                          | MacLachlan et al. 2017                                                                                                                                                                             |
+| **Air Pollution and LULC**                     | Impact of LULC changes on major air pollutants and land surface temperatures, analyzed using Sentinel-3 and Sentinel-5 data                                                     | Fuldalu and Alta, 2021                                                                                                                                                                             |
+| **Urban Green Spaces**                         | Classification and assessment of urban green spaces using a variety of remote sensing techniques, highlighting the importance of hybrid methods and object-based image analysis | Shahtahmassebi et al. 2021                                                                                                                                                                         |
+| **Monitoring Forests and Illegal Logging**     | Monitoring forest loss and illegal logging in Brazil's Amapá with Landsat data and the Forest Watcher app                                                                       | [Leonardo Brito, DEMA-AP](https://news.mongabay.com/2019/04/how-a-sheriff-in-brazil-is-using-satellites-to-stop-deforestation/)                                                                    |
+| **Expert Systems**                             | Application of expert systems in environmental analysis, combining human knowledge with algorithmic data processing                                                             | [Aftab Alam](https://www.quora.com/What-is-a-knowledge-based-system-in-the-context-of-artificial-intelligence)                                                                                     |
+| **Classification and Regression Trees (CART)** | Application of CART in categorizing continuous and discrete data, including model construction and analysis                                                                     | [StatQuest](https://www.youtube.com/watch?v=_L39rN6gz7Y)                                                                                                                                           |
+| **Overfitting and Model Tuning**               | Discussion on strategies to avoid overfitting, such as pruning and Random Forests, and ensuring model reliability and accuracy                                                  | Bellini and Cascella, 2022;                                                                                                                                                                        |
+| **Image Classification Techniques**            | Principles and applications of image classification techniques like Maximum Likelihood Classification and Support Vector Machines                                               | Núñez et al. 2018; [Drew Wilimitis](https://towardsdatascience.com/the-kernel-trick-c98cdbcaeb3f#:~:text=The%20%E2%80%9Ctrick%E2%80%9D%20is%20that%20kernel,the%20data%20by%20these%20transformed) |
+
+### Landsat Data for Urban Expansion
+
+Landsat satellite imagery plays a crucial role in monitoring urban expansion. The temporal depth and spatial resolution of Landsat data allow for detailed tracking of urban growth over time. By analyzing satellite images from different years, researchers can identify patterns of urban sprawl, quantify the rate of expansion, and observe changes in land use. The graduating colors in the imagery provide a visual representation of outward expansion, making it easier to communicate the findings to policymakers and the public.
+
+### Sentinel-3 and Sentinel-5 for Air Pollution Monitoring
+
+The Sentinel-3 and Sentinel-5 satellites, part of the European Union's Copernicus program, offer critical data for studying air pollution and its relation to land use/land cover changes. Sentinel-3 provides Sea and Land Surface Temperature data, which is essential for understanding heat distribution and its impact on air quality. Sentinel-5 Precursor, on the other hand, focuses on monitoring major air pollutants, including nitrogen dioxide, ozone, formaldehyde, sulfur dioxide, methane, carbon monoxide, and aerosols. The integration of these datasets allows researchers to investigate the effects of LULC transformations on air pollution levels, providing insights into how urban planning and environmental policies might mitigate adverse impacts.
+
+### Hexagonal Grid System for Data Integration
+
+The concept of using a hexagonal grid system, as mentioned in the honeycombing technique, represents an innovative approach to integrating and analyzing sensor data from different sources. This method addresses the challenge of spatial heterogeneity in environmental data by providing a uniform framework for data aggregation. The hexagonal shape is preferred over square grids due to its efficiency in covering large areas without overlapping and minimizing distance distortion. This technique enhances the spatial analysis of environmental variables such as land surface temperature, particulate matter (PM2.5), and other pollutants, facilitating more accurate assessments of air quality and LULC impacts.
+
+### Forest Watcher App for Illegal Logging Monitoring
+
+The Forest Watcher app exemplifies the application of mobile technology in environmental conservation. It allows users, including law enforcement and environmental activists, to access Global Forest Watch data in the field, enabling the detection of deforestation and forest degradation in real time. This tool leverages high-resolution satellite imagery and algorithms to identify changes in forest cover. By making this information readily accessible on mobile devices, the app empowers local authorities and communities to take immediate action against illegal logging activities.
+
+### Classification and Regression Trees (CART) and Random Forests
+
+CART and random forests are powerful machine learning methods used for classification and regression tasks in environmental studies. CART algorithms split the data into subsets based on feature value thresholds, constructing decision trees that model the decision-making process. Random forests improve on this by creating an ensemble of decision trees, each trained on a random subset of the data. This approach reduces the variance of the model, leading to more stable and accurate predictions. In environmental applications, these techniques can classify land cover types, predict pollution levels, or assess the risk of forest fires, among other uses.
+
+## Applications
+
+## Reflection
+
+Reflecting on my experiences from CASA0006, where I first delved into machine learning, I see how invaluable that foundational knowledge has been for my current foray into remote sensing applications. The leap from understanding basic machine learning concepts to applying them in the analysis of environmental data and satellite imagery has been both enlightening and empowering.
+
+The ability to utilize techniques such as Classification and Regression Trees (CART) and random forests in the context of remote sensing has opened up new avenues for me to explore the complexities of our environment. It's fascinating to see the direct impact of these machine learning tools in interpreting vast datasets, monitoring urban growth, and assessing the health of our ecosystems from a bird's-eye view.
+
+This journey has reinforced the idea that the skills and knowledge acquired in machine learning are not just theoretical but highly applicable in solving real-world environmental challenges. It's a vivid reminder of the importance of interdisciplinary learning and the need to stay curious and adaptable in a rapidly evolving field.
+
+## References
+
+Bellini, V. et al. (2022) 'Understanding basic principles of artificial intelligence: a practical guide for intensivists', Acta Biomed, 93, p. 2022297.
+
+Fuladlu, K. & Altan, H. (2021) 'Examining land surface temperature and relations with the major air pollutants: A remote sensing research in case of Tehran', Urban Climate, 39, p. 100958.
+
+Gonzales, J. (2019) 'How a sheriff in Brazil is using satellites to stop deforestation', \[Online\]. Available at: <https://news.mongabay.com/2019/04/how-a-sheriff-in-brazil-is-using-satellites-to-stop-deforestation/>
+
+MacLachlan, A. et al. (2017) 'Urban Growth Dynamics in Perth, Western Australia: Using Applied Remote Sensing for Sustainable Future Planning', Land, 6(1), p. 9.
+
+Núñez, J.M. et al. (2019) 'High-Resolution Satellite Imagery Classification for Urban Form Detection', \[Online\]. IntechOpen. Available at: https://www.intechopen.com/chapters/64971 (Accessed: 16 March 2024).
+
+Shahtahmassebi, A.R. et al., 2021. Remote sensing of urban green spaces: A review, *Urban Forestry & Urban Greening*, årg. 57, s. 126946.

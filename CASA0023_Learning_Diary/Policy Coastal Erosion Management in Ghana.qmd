@@ -76,9 +76,9 @@ While the Ghanaian government has implemented seawall constructions as a counter
 
 The application of remotely sensed data can play a crucial role in supporting the policy goals set by the Ghanaian government for coastal erosion management. High-resolution optical satellite imagery (e.g., Sentinel-2, Landsat 8, Gaofen-1), Synthetic Aperture Radar (SAR) data (e.g., Sentinel-1), and Digital Elevation Models (DEMs) such as ASTER GDEM and SRTM, offer valuable tools for monitoring, planning, and managing coastal erosion efforts effectively.
 
-**· Monitoring and Assessment**: By regularly comparing high-resolution satellite images, authorities can identify the most severely eroded areas and the rate of erosion. SAR data, capable of penetrating cloud cover, is invaluable for assessing the coastline's status during and after storm events, providing crucial information for emergency response and recovery efforts.
+**· Monitoring and Assessment**: By regularly comparing high-resolution satellite images, authorities can identify the most severely eroded areas and the rate of erosion. SAR data, capable of penetrating cloud cover, is invaluable for assessing the coastline's status during and after storm events, providing crucial information for emergency response and recovery efforts (Dellepiane, De Laurentiis & Giordano 2004).
 
-**· Planning and Implementation**: DEMs offer a three-dimensional representation of the surface, aiding in understanding the erosion process and its impact on coastal landscapes. This information can be used to strategically plan the location and design of seawalls and other protective measures, ensuring they are both effective and environmentally sustainable.
+**· Planning and Implementation**: DEMs offer a three-dimensional representation of the surface, aiding in understanding the erosion process and its impact on coastal landscapes. This information can be used to strategically plan the location and design of seawalls and other protective measures, ensuring they are both effective and environmentally sustainable (Evadzi, Zorita, & Hünicke 2017).
 
 **· Public Engagement and Awareness**: Visualizations created from remotely sensed data can enhance public awareness about coastal erosion. By making this information accessible, the government can foster community participation in coastal protection efforts, aligning with the policy's emphasis on community involvement.
 
@@ -99,6 +99,10 @@ Appeaning Addo, K., Walkden, M. & Mills, J.P. (2008). Detection, measurement and
 Appeaning Addo, K. (2013). Assessing Coastal Vulnerability Index to Climate Change: the Case of Accra -- Ghana. In: Proceedings of the 12th International Coastal Symposium, Plymouth, England, *Journal of Coastal Research*, Special Issue No. 65, pp.1892-1897.
 
 Appeaning Addo, K. & Appeaning Addo, I. (2016). Coastal erosion management in Accra: Combining local knowledge and empirical research. *Jàmbá: Journal of Disaster Risk Studies*, 8(1), p.274. Available at: <https://jamba.org.za/index.php/jamba/article/view/274> \[Accessed 31 Jan. 2024\].
+
+Dellepiane, S., De Laurentiis, R. & Giordano, F. (2004). Coastline extraction from SAR images and a method for the evaluation of the coastline precision. *Pattern Recognition Letters*, 25(13), 1461-1470.
+
+Evadzi, P.I.K., Zorita, E. & Hünicke, B. (2017). Quantifying and predicting the contribution of sea-level rise to shoreline change in Ghana: Information for coastal adaptation strategies. *Journal of Coastal Research*, 33(6), pp.1283--1291.
 
 "Ghana's coastline, swallowed by the sea," (2021). *UNESCO Courier*. \[online\] Available at: <https://courier.unesco.org/en/articles/ghanas-coastline-swallowed-sea> \[Accessed 31 Jan. 2024\].
 

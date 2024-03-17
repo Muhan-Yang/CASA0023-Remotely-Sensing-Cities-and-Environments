@@ -2,6 +2,8 @@
 
 ## Summary
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gKGOeTFHnKY?si=SKe3e3coPQ_NTISh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 This week's focus was on understanding Google Earth Engine (GEE), a robust geospatial processing service that has revolutionized the way we perform large-scale environmental analyses. It provides the capability to analyze vast datasets on a planetary scale, delivering results rapidly, which is a significant advancement over traditional methods.
 
 +----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
@@ -57,5 +59,11 @@ GEE supports advanced statistical analyses, including **linear regression** mode
 ## Applications
 
 ## Reflection
+
+This week's learning experience has been a journey filled with both challenges and discoveries for me. At the outset of my introduction to GEE, I was incredibly excited about its vast data resources and analytical capabilities, yet I also felt puzzled about how to effectively utilize this powerful tool.
+
+Over the course of the week, I have gained a preliminary understanding of the basic operations of GEE, access to datasets, and simple analysis. Through hands-on practice, I gradually became familiar with the GEE interface and programming syntax, even though this required me to spend additional time learning the basics of JavaScript. I also became aware of the complexities of remote sensing data analysis and the importance of data quality and applicability issues when using GEE for environmental monitoring and land change analysis.
+
+In summary, this introductory week to GEE has been a challenging journey, but it has also opened a new perspective for me, deepening my understanding of the power and potential of remote sensing data. I look forward to continuing my exploration of GEE, applying the knowledge I have gained to a wider range of environmental monitoring and geographic analysis projects.
 
 ## References
