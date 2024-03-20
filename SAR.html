@@ -168,13 +168,13 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Classification.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">ClassificationⅠ</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Classification2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">ClassificationⅡ</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -201,13 +201,18 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
   <ul>
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">8.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#sar-in-flood-analysis" id="toc-sar-in-flood-analysis" class="nav-link" data-scroll-target="#sar-in-flood-analysis"><span class="header-section-number">8.1.1</span> <strong>SAR in Flood Analysis</strong></a></li>
-  <li><a href="#sar-fundamentals" id="toc-sar-fundamentals" class="nav-link" data-scroll-target="#sar-fundamentals"><span class="header-section-number">8.1.2</span> <strong>SAR Fundamentals</strong></a></li>
-  <li><a href="#sar-polarization" id="toc-sar-polarization" class="nav-link" data-scroll-target="#sar-polarization"><span class="header-section-number">8.1.3</span> <strong>SAR Polarization</strong></a></li>
-  <li><a href="#change-detection-with-sar" id="toc-change-detection-with-sar" class="nav-link" data-scroll-target="#change-detection-with-sar"><span class="header-section-number">8.1.4</span> <strong>Change Detection with SAR</strong></a></li>
-  <li><a href="#statistical-tests-and-image-fusion" id="toc-statistical-tests-and-image-fusion" class="nav-link" data-scroll-target="#statistical-tests-and-image-fusion"><span class="header-section-number">8.1.5</span> <strong>Statistical Tests and Image Fusion</strong></a></li>
+  <li><a href="#interpreting-radar-images" id="toc-interpreting-radar-images" class="nav-link" data-scroll-target="#interpreting-radar-images"><span class="header-section-number">8.1.1</span> Interpreting Radar Images</a></li>
+  <li><a href="#sar-in-flood-analysis" id="toc-sar-in-flood-analysis" class="nav-link" data-scroll-target="#sar-in-flood-analysis"><span class="header-section-number">8.1.2</span> <strong>SAR in Flood Analysis</strong></a></li>
+  <li><a href="#sar-fundamentals" id="toc-sar-fundamentals" class="nav-link" data-scroll-target="#sar-fundamentals"><span class="header-section-number">8.1.3</span> <strong>SAR Fundamentals</strong></a></li>
+  <li><a href="#sar-polarization" id="toc-sar-polarization" class="nav-link" data-scroll-target="#sar-polarization"><span class="header-section-number">8.1.4</span> <strong>SAR Polarization</strong></a></li>
+  <li><a href="#change-detection-with-sar" id="toc-change-detection-with-sar" class="nav-link" data-scroll-target="#change-detection-with-sar"><span class="header-section-number">8.1.5</span> <strong>Change Detection with SAR</strong></a></li>
+  <li><a href="#statistical-tests-and-image-fusion" id="toc-statistical-tests-and-image-fusion" class="nav-link" data-scroll-target="#statistical-tests-and-image-fusion"><span class="header-section-number">8.1.6</span> <strong>Statistical Tests and Image Fusion</strong></a></li>
   </ul></li>
-  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">8.2</span> Applications</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">8.2</span> Applications</a>
+  <ul class="collapse">
+  <li><a href="#texture-based-characterization-of-urban-environments-using-sar" id="toc-texture-based-characterization-of-urban-environments-using-sar" class="nav-link" data-scroll-target="#texture-based-characterization-of-urban-environments-using-sar"><span class="header-section-number">8.2.1</span> <strong>Texture-Based Characterization of Urban Environments Using SAR</strong></a></li>
+  <li><a href="#urban-flood-detection-in-san-diego" id="toc-urban-flood-detection-in-san-diego" class="nav-link" data-scroll-target="#urban-flood-detection-in-san-diego"><span class="header-section-number">8.2.2</span> Urban Flood Detection in San Diego</a></li>
+  </ul></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">8.3</span> Reflection</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">8.4</span> References</a></li>
   </ul>
@@ -233,7 +238,17 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 
 </header>
 
-<p>SAR, or Synthetic Aperture&nbsp;Radar, is an especially promising technique. As an active sensor, the radar can detect the&nbsp;Earth’s surface no matter what time of day it is or what cloud conditions prevail.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Radar_in_motion_diagram.jpeg" class="img-fluid figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><em>Source: <a href="https://nisar.jpl.nasa.gov/mission/get-to-know-sar/overview/">NASA</a></em></p>
+<p><strong>Synthetic Aperture Radar (SAR)</strong> is a technology with broad prospects. As an active sensor, SAR is capable of detecting the Earth’s surface at any time of day and under any cloud conditions. Compared to traditional optical imaging systems, SAR’s unique advantages include its all-weather, day-and-night operational capability, making it indispensable for emergency response and scientific research.</p>
 <section id="summary" class="level2" data-number="8.1">
 <h2 data-number="8.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">8.1</span> Summary</h2>
 <table class="table">
@@ -270,51 +285,101 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 </tr>
 </tbody>
 </table>
-<section id="sar-in-flood-analysis" class="level3" data-number="8.1.1">
-<h3 data-number="8.1.1" class="anchored" data-anchor-id="sar-in-flood-analysis"><span class="header-section-number">8.1.1</span> <strong>SAR in Flood Analysis</strong></h3>
+<section id="interpreting-radar-images" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="interpreting-radar-images"><span class="header-section-number">8.1.1</span> Interpreting Radar Images</h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/SARimage.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><em>Source: <a href="https://asf.alaska.edu/information/sar-information/how-do-i-read-sar-images/">Alaska Satellite Facility (ASF)</a></em></p>
+<ul>
+<li><p>Smooth surfaces like calm water appear dark because radar pulses reflect away.</p></li>
+<li><p>Rough or wet surfaces are brighter due to more scattered radar waves.</p></li>
+<li><p>Slopes cause geometric distortions; steeper slopes result in more pronounced layover, with mountaintops appearing tilted towards the sensor.</p></li>
+<li><p>Specific polarization choices can highlight terrain features.</p></li>
+<li><p>In urban areas, buildings aligned perpendicular to the flight direction reflect strongly.</p></li>
+<li><p>Surface features near the radar’s wavelength size cause strong backscatter.</p></li>
+<li><p>Large-scale terrain variations lead to one side appearing bright and the other dim.</p></li>
+<li><p>Man-made structures like buildings act as corner reflectors, appearing as bright spots in SAR images, especially corner reflectors and calibration instruments, which can produce a bright cross in the processed images.</p></li>
+</ul>
+</section>
+<section id="sar-in-flood-analysis" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="sar-in-flood-analysis"><span class="header-section-number">8.1.2</span> <strong>SAR in Flood Analysis</strong></h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pFJtMk8PXRw?si=3FuA3bl-6xVhLbzN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
 </iframe>
 <ul>
-<li><strong>Flood Detection:</strong> Flooded regions are depicted as dark areas in SAR imagery due to calm waters reflecting radar away, contrasting with rough terrains which scatter the radar more uniformly. This property of SAR allows for the precise identification of water bodies and flooded zones, essential for disaster response and environmental monitoring.</li>
+<li><strong>Flood Detection:</strong> By analyzing SAR data from satellites like Sentinel-1, scientists can distinguish calm water surfaces from rough ones based on radar reflection differences, identifying flood areas. Specific cases have demonstrated the successful assistance of SAR data in flood management and disaster response, showcasing its practical application value.</li>
 </ul>
 </section>
-<section id="sar-fundamentals" class="level3" data-number="8.1.2">
-<h3 data-number="8.1.2" class="anchored" data-anchor-id="sar-fundamentals"><span class="header-section-number">8.1.2</span> <strong>SAR Fundamentals</strong></h3>
+<section id="sar-fundamentals" class="level3" data-number="8.1.3">
+<h3 data-number="8.1.3" class="anchored" data-anchor-id="sar-fundamentals"><span class="header-section-number">8.1.3</span> <strong>SAR Fundamentals</strong></h3>
 <ul>
-<li><p><strong>Operation:</strong> SAR systems emit electromagnetic signals to map earth’s surface by capturing backscatter, which varies with surface conditions and can see through weather and cloud cover.</p></li>
-<li><p><strong>Synthetic Aperture:</strong> Through signal processing, SAR simulates a longer antenna, achieving higher resolution in imaging, which is crucial for detailed surface analysis and monitoring changes over time.</p></li>
+<li><p><strong>Operational Principle</strong>: SAR systems emit electromagnetic signals and capture the backscatter to map the Earth’s surface. This signal varies with surface conditions and can see through weather and cloud cover.</p></li>
+<li><p><strong>Synthetic Aperture</strong>: Through signal processing, SAR simulates a longer antenna, achieving higher resolution imaging, crucial for detailed surface analysis and monitoring changes over time.</p></li>
+<li><p><strong>Frequency Bands</strong>: Different frequency bands (e.g., X, C, L, P) are crucial for SAR applications, as each band has different penetration capabilities and is suited for various observation needs.</p></li>
 </ul>
 </section>
-<section id="sar-polarization" class="level3" data-number="8.1.3">
-<h3 data-number="8.1.3" class="anchored" data-anchor-id="sar-polarization"><span class="header-section-number">8.1.3</span> <strong>SAR Polarization</strong></h3>
+<section id="sar-polarization" class="level3" data-number="8.1.4">
+<h3 data-number="8.1.4" class="anchored" data-anchor-id="sar-polarization"><span class="header-section-number">8.1.4</span> <strong>SAR Polarization</strong></h3>
 <ul>
-<li><strong>Surface Interaction:</strong> SAR polarization significantly influences how different surfaces are imaged, with VV polarization sensitive to surface roughness, VH or HV ideal for volume scattering (e.g., foliage), and HH polarization best for double-bounce surfaces (e.g., urban structures). This diversity in response aids in detailed environmental and urban studies.</li>
+<li><strong>Surface Interaction:</strong> Different SAR polarizations (VV, VH/HV, HH) respond differently to backscatter, significantly affecting how SAR images various surfaces. VV polarization is sensitive to surface roughness, VH or HV is ideal for volume scattering (e.g., foliage), and HH polarization is best for double-bounce surfaces (e.g., urban structures). This diversity in response aids in detailed environmental and urban studies.</li>
 </ul>
 </section>
-<section id="change-detection-with-sar" class="level3" data-number="8.1.4">
-<h3 data-number="8.1.4" class="anchored" data-anchor-id="change-detection-with-sar"><span class="header-section-number">8.1.4</span> <strong>Change Detection with SAR</strong></h3>
+<section id="change-detection-with-sar" class="level3" data-number="8.1.5">
+<h3 data-number="8.1.5" class="anchored" data-anchor-id="change-detection-with-sar"><span class="header-section-number">8.1.5</span> <strong>Change Detection with SAR</strong></h3>
 <ul>
-<li><p><strong>Differential Interferometry (DInSAR):</strong> Offers a method for tracking ground movements, vital for geological and infrastructure monitoring.</p></li>
-<li><p><strong>Data Fusion:</strong> Combining SAR with optical data enriches analysis, providing a multi-faceted view of environmental changes. The selection of the right scale (power, amplitude, dB) is crucial for accurate analysis and visualization, enhancing the interpretability of SAR data.</p></li>
+<li><p><strong>Differential Interferometry (DInSAR)</strong>: Provides a method for tracking ground movements, vital for geological and infrastructure monitoring.</p></li>
+<li><p><strong>Data Fusion</strong>: Combining SAR with optical data offers a multifaceted view of environmental changes. Selecting the correct scale (power, amplitude, dB) is crucial for accurate analysis and visualization, enhancing SAR data interpretability.</p></li>
 </ul>
 </section>
-<section id="statistical-tests-and-image-fusion" class="level3" data-number="8.1.5">
-<h3 data-number="8.1.5" class="anchored" data-anchor-id="statistical-tests-and-image-fusion"><span class="header-section-number">8.1.5</span> <strong>Statistical Tests and Image Fusion</strong></h3>
+<section id="statistical-tests-and-image-fusion" class="level3" data-number="8.1.6">
+<h3 data-number="8.1.6" class="anchored" data-anchor-id="statistical-tests-and-image-fusion"><span class="header-section-number">8.1.6</span> <strong>Statistical Tests and Image Fusion</strong></h3>
 <ul>
-<li><p><strong>Statistical Analysis:</strong> Application of t-tests and standard deviation to detect temporal changes in SAR data highlights SAR’s utility in change detection.</p></li>
-<li><p><strong>Image Fusion Techniques:</strong> Techniques like Principal Component Analysis and Intensity Fusion are explored to merge SAR with optical data, offering comprehensive insights into environmental conditions and changes, thereby broadening the scope of remote sensing applications.</p></li>
+<li><p><strong>Statistical Analysis</strong>: Applying statistical tests such as t-tests and standard deviation to detect temporal changes in SAR data highlights SAR’s utility in change detection.</p></li>
+<li><p><strong>Image Fusion Techniques</strong>: Exploring techniques like Principal Component Analysis and Intensity Fusion to merge SAR with optical data, providing comprehensive insights into environmental conditions and changes, thereby broadening the scope of remote sensing applications.</p></li>
 </ul>
 </section>
 </section>
 <section id="applications" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">8.2</span> Applications</h2>
+<section id="texture-based-characterization-of-urban-environments-using-sar" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="texture-based-characterization-of-urban-environments-using-sar"><span class="header-section-number">8.2.1</span> <strong>Texture-Based Characterization of Urban Environments Using SAR</strong></h3>
+<p>The research conducted by Dell’Acqua and Gamba (2003) explores the potential of co-occurrence texture measures for enhancing the classification of urban areas in SAR imagery. This approach allows for a more nuanced analysis of urban structures, identifying variations in building density within the town of Pavia, Northern Italy. By integrating texture measures with SAR data, the study opens new avenues for urban planning and development monitoring, showcasing SAR’s capability to provide detailed insights into the urban fabric.</p>
+<p><strong>Methodology and Findings</strong></p>
+<p>Utilizing a series of ERS-1 images of Pavia and applying co-occurrence texture analysis, the researchers were able to discern different urban densities with improved accuracy. The study emphasizes the importance of selecting the appropriate window size for texture measures and identifies key texture parameters that significantly aid in the urban classification process. This methodology highlights SAR’s adaptability in urban studies, especially in scenarios where high-resolution optical data may not be available or sufficient.</p>
+<p><strong>Practical Implications</strong></p>
+<p>The findings from Dell’Acqua and Gamba’s work illustrate SAR’s effectiveness in urban density mapping, providing valuable data for urban planners and environmental scientists. By enabling a refined analysis of urban areas, SAR imagery, when coupled with texture analysis, facilitates the identification of residential, industrial, and suburban zones, thereby supporting informed decision-making in urban development and land use planning.</p>
+<p><img src="images/case1.png" class="img-fluid"></p>
+</section>
+<section id="urban-flood-detection-in-san-diego" class="level3" data-number="8.2.2">
+<h3 data-number="8.2.2" class="anchored" data-anchor-id="urban-flood-detection-in-san-diego"><span class="header-section-number">8.2.2</span> Urban Flood Detection in San Diego</h3>
+<p>A significant instance of the practical application of SAR technology, enhanced with machine learning, is found in the study conducted in San Diego, California, by Tanim et al.&nbsp;(2022). This research illustrates the potential of integrating SAR imagery with advanced machine learning algorithms to detect and map urban flooding accurately.</p>
+<p><strong>Methodology Overview</strong>:</p>
+<ul>
+<li><p><strong>Data Preparation</strong>: The study utilized Sentinel-1 SAR imagery, which was processed to improve signal quality for flood detection. This preprocessing involved correcting for atmospheric disturbances and noise to ensure the integrity of the data used for analysis.</p></li>
+<li><p><strong>Machine Learning Integration</strong>: To distinguish between water and non-water areas within the urban landscape, the study employed several machine learning models, including Random Forest (RF), Support Vector Machine (SVM), and Maximum Likelihood Classifier (MLC). These models, both supervised and unsupervised, were trained and tested on the processed SAR data to accurately identify flooded and non-flooded regions.</p></li>
+<li><p><strong>Flood Detection and Mapping</strong>: Leveraging SAR imagery alongside machine learning enabled the rapid identification of flooded areas. By analyzing differences in radar backscatter, which vary significantly between water surfaces and other types of land cover, the models were capable of precisely mapping the extent of urban flooding.</p></li>
+</ul>
+<p>This approach demonstrates an advanced methodology for urban flood detection, utilizing SAR’s capabilities in scenarios where optical sensors might be impeded by cloud cover or nighttime conditions.</p>
+<p><strong>Implications for Urban Planning</strong>:</p>
+<p>The study’s findings provide essential insights for urban planners and emergency response teams by identifying potential flood-prone zones and offering actionable data to mitigate the impact of flooding in urban settings. The capacity for quick and accurate flood extent mapping significantly enhances disaster preparedness and response strategies, contributing to the resilience of urban infrastructure against flood risks.</p>
+<p><img src="images/figure6.png" class="img-fluid"></p>
+</section>
 </section>
 <section id="reflection" class="level2" data-number="8.3">
 <h2 data-number="8.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">8.3</span> Reflection</h2>
-<p>This week provided a deep dive into the capabilities and applications of Synthetic Aperture Radar (SAR) in remote sensing. The distinction between active and passive sensors, along with the insights into SAR’s role in environmental monitoring, particularly in flood analysis, offered a solid foundation in SAR technology. The exploration of SAR polarization and its implications for surface analysis broadened my understanding of how different materials interact with SAR signals. Additionally, the discussion on change detection techniques and the fusion of SAR with optical data opened new avenues for comprehensive environmental analysis.</p>
+<p>This week’s exploration into Synthetic Aperture Radar (SAR) has been profoundly enlightening, unveiling the extensive capabilities and diverse applications of SAR in the realm of remote sensing. Understanding the critical differences between active and passive sensors, coupled with deep insights into SAR’s pivotal role in environmental monitoring—especially in flood analysis—has laid a robust foundation in my comprehension of SAR technology. Delving into the nuances of SAR polarization and its effects on surface analysis significantly expanded my appreciation of the intricate ways in which various materials interact with SAR signals. Furthermore, engaging discussions on change detection methodologies and the integration of SAR with optical data have opened up new horizons for conducting thorough environmental analyses. Importantly, this journey through SAR’s intricacies has sparked inspiration for my dissertation on conducting flood risk assessment, presenting a clear path forward in harnessing SAR’s potential to enhance our understanding and management of flood risks.</p>
 </section>
 <section id="references" class="level2" data-number="8.4">
 <h2 data-number="8.4" class="anchored" data-anchor-id="references"><span class="header-section-number">8.4</span> References</h2>
+<p>Alaska Satellite Facility, 2019. How do I interpret SAR images? [online] Available at: <a href="https://asf.alaska.edu/information/sar-information/how-do-i-read-sar-images/" class="uri">https://asf.alaska.edu/information/sar-information/how-do-i-read-sar-images/</a></p>
+<p>Dell’Acqua, F., and Gamba, P. (2003). Texture-Based Characterization of Urban Environments on Satellite SAR Images. <em>IEEE Transactions on Geoscience and Remote Sensing</em>, 41(1), pp.&nbsp;153–159.</p>
+<p>Tanim, A.H., McRae, C.B., Tavakol-Davani, H. and Goharian, E. (2022). Flood Detection in Urban Areas Using Satellite Imagery and Machine Learning. *Water*, 14(7), p.1140. Available at: https://doi.org/10.3390/w14071140.</p>
 
 
 </section>
@@ -671,7 +736,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./Classification2.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification2</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">ClassificationⅡ</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
