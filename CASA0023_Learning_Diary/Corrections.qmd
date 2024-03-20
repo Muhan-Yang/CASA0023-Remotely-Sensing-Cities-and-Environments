@@ -2,6 +2,8 @@
 
 ## Summary
 
+Processing remote sensing data is essential to remove noise from sensors, the atmosphere, and terrain, ensuring the data's accuracy...
+
 | **Key Aspect**                                      | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Remote Sensing Evolution with Landsat 9**         | Initially, NASA preferred analog RBV cameras for remote sensing, capturing green, red, and NIR spectra. Norwood advocated for a digital Multispectral Scanner (MSS), foreseeing its potential to capture both visible and invisible wavelengths, leading to the adoption of MSS as a standard for future remote sensing endeavors.                                                                                                                                                                                                                                                 |
@@ -10,6 +12,30 @@
 | *Atmospheric Correction Types*                      | Explores atmospheric correction methods, distinguishing between relative and absolute approaches to adjust imagery for atmospheric influences. Techniques include **Dark Object Subtraction (DOS), Psuedo-invariant Features (PIFs)**, and use of **atmospheric radiative transfer models like MODTRAN and 6S**. These corrections are pivotal for accurate earth surface representation, especially when deriving biophysical parameters or comparing data across time and space.                                                                                                 |
 | *Orthorectification and Topographic Correction*     | Focuses on adjusting images for relief displacement caused by terrain, ensuring that imagery accurately represents the Earth's surface as if viewed directly from above. Utilizes **sensor geometry and elevation models**, alongside **cosine correction and other mathematical models**, to correct for distortions.                                                                                                                                                                                                                                                             |
 | **Data Joining and Enhancement**                    | The process involves mosaicking to create seamless imagery, with techniques like feathering and histogram matching to ensure consistency across images. Enhancements such as **contrast adjustment, filtering, PCA, texture analysis, and fusion** (e.g., pan-sharpening) are employed to improve image quality, interpretability, and application relevance. These techniques help in highlighting specific features, reducing data dimensionality, and integrating data from multiple sensors, thereby enhancing the utility of remote sensing imagery for various applications. |
+
+**Geometric correction**
+
+```{r echo=FALSE, out.width = "60%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "Geometric correction.png"))
+```
+
+*Coordinates transformation Source:* [wikipedia](http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Geometric_corrections)
+
+**Atmospheric correction**
+
+```{r echo=FALSE, out.width = "60%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "Atmospheric Correction.png"))
+```
+
+*Source: Wang et al. (2012)*
+
+**Orthorectification correction**
+
+```{r echo=FALSE, out.width = "60%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "Orthorectification Correction.jpeg"))
+```
+
+*Source:* [Satellite Imaging Corporation](https://www.satimagingcorp.com/services/orthorectification/)
 
 ### Remote Sensing Data Processing and Correction Formulas
 
@@ -109,5 +135,7 @@ Goetz, S. J., Bunn, A. G., Fiske, G. J., & Houghton, R. A. (2005). Satellite-obs
 Lan, Z. & Liu, Y. (2018). Study on multi-scale window determination for GLCM texture description in high-resolution remote sensing image geo-analysis supported by GIS and domain knowledge. ISPRS International Journal of Geo-Information, 7(5), pp.175.
 
 Lu, D. & Weng, Q. (2007). A survey of image classification methods and techniques for improving classification performance. International Journal of Remote Sensing, 28(5), pp.823-870.
+
+Wang, Jianghao, Yong Ge, Gerard B. M. Heuvelink, Chenghu Zhou, and Dick Brus. (2012). "Effect of the Sampling Design of Ground Control Points on the Geometric Correction of Remotely Sensed Imagery." International Journal of Applied Earth Observation and Geoinformation 18 (August): 91--100.
 
 Zeng, Y. et al. (2022). Optical vegetation indices for monitoring terrestrial ecosystems globally. Remote Sensing Applications: Society and Environment, 3(7), pp.477--493.

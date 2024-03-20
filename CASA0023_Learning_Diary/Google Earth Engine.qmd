@@ -2,7 +2,9 @@
 
 ## Summary
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gKGOeTFHnKY?si=SKe3e3coPQ_NTISh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gKGOeTFHnKY?si=SKe3e3coPQ_NTISh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+</iframe>
 
 This week's focus was on understanding Google Earth Engine (GEE), a robust geospatial processing service that has revolutionized the way we perform large-scale environmental analyses. It provides the capability to analyze vast datasets on a planetary scale, delivering results rapidly, which is a significant advancement over traditional methods.
 
@@ -36,6 +38,12 @@ This week's focus was on understanding Google Earth Engine (GEE), a robust geosp
 |                                  | \- **Image Reduction**: GEE provides functions for aggregating data, performing regional statistics, and conducting neighborhood analysis. |
 +----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 
+```{r echo=FALSE, out.width = "90%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "GEE.png"))
+```
+
+*Earth Engine Explorer platform. (a) Workspace. (b) Data Catalog Source:* *Amani et al. (2020)*
+
 ### Key Concepts and Terminology
 
 GEE operates on two main types of data: raster (Image) and vector (Feature), each serving different purposes but essential for comprehensive spatial analysis. An Image in GEE refers to raster data with bands, while a Feature represents vector data comprising geometry and attributes. These are organized into collections for efficient processing: ImageCollection for rasters and FeatureCollection for vectors.
@@ -45,6 +53,12 @@ GEE operates on two main types of data: raster (Image) and vector (Feature), eac
 GEE utilizes JavaScript for coding, which introduces a few distinctions from other programming languages like Python and R. Variables are declared with **`var`**, and code blocks end with a semicolon (**`;`**). JavaScript objects, similar to dictionaries, are crucial for structuring data and functions within GEE.
 
 ### Practical Applications and Functions in GEE
+
+```{r echo=FALSE, out.width = "90%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "function.png"))
+```
+
+*Overview of different supporting functions within GEE Source: Amani et al. (2020)*
 
 GEE excels in various geospatial operations, from simple mappings to complex machine learning models. This versatility is showcased through functions like **`map()`** and **`reduce()`**, which allow for efficient data manipulation and analysis across large datasets. Specifically, **`reduce()`** functions are used to aggregate data, offering insights through statistical measures like mean, sum, and median over selected regions or neighborhoods.
 
@@ -58,6 +72,52 @@ GEE supports advanced statistical analyses, including **linear regression** mode
 
 ## Applications
 
+### **Expanding the Applications of Google Earth Engine**
+
+**Comprehensive Utilization Across Disciplines**
+
+Amani et al. (2020) offer a deep dive into GEE's utility across multiple disciplines, presenting it as a cloud computing platform that significantly eases the challenges of processing and analyzing large-scale geospatial data. From enabling detailed land cover classification and aiding in hydrological studies to supporting urban planning and enhancing natural disaster management, GEE's capabilities are vast and varied.
+
+**Case Studies Highlighting GEE's Versatility**
+
+```{r echo=FALSE, out.width = "80%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "application.png"))
+```
+
+-   **Land Cover and Land Use Classification**: Leveraging Landsat and Sentinel datasets, researchers have utilized GEE for detailed classification projects, demonstrating its capacity to handle vast datasets efficiently.
+
+-   **Hydrology and Water Resources Management**: Utilizing GEE for water body monitoring and hydrological studies showcases its potential in managing and conserving water resources.
+
+-   **Urban Planning**: GEE's data and tools support urban development studies, helping planners and policymakers make informed decisions.
+
+-   **Natural Disaster Analysis**: The platform's real-time data processing capabilities are crucial for disaster response, offering insights into affected areas for timely intervention.
+
+**Enabling Global Environmental Monitoring**
+
+The review by Amani et al. (2020) indicates a significant trend towards employing GEE for global environmental monitoring tasks. Its ability to process petabytes of satellite imagery data makes it an unparalleled tool in observing Earth's surface changes over time, crucial for understanding climate change impacts, deforestation rates, urban expansion, and more.
+
+**Implications for Future Research and Application**
+
+The wide range of applications covered in the review points to GEE's growing importance in environmental science, geography, urban planning, and beyond. It underscores the platform's role in democratizing access to big data analytics, enabling researchers, practitioners, and decision-makers to leverage satellite imagery for sustainable development goals.
+
+### **Global Monitoring of SUHI through Google Earth Engine**
+
+#### Methodological Innovation
+
+```{r echo=FALSE, out.width = "75%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "workflow.png"))
+```
+
+Ravanelli et al. (2018) developed a large-scale spatio-temporal procedure using GEE, benefiting from the Climate Engine tool to extract Land Surface Temperature (LST) from Landsat imagery. Their method represents a leap in analyzing the net effect of LC changes on SUHI by processing over 6,000 Landsat images spanning two decades. This approach underscores GEE's unparalleled processing power and its role in simplifying the analysis of Geo Big Data.
+
+#### Insights into Urban Sustainability
+
+The study's application to six metropolitan areas in the U.S. revealed a general increase in SUHI due to urban growth, providing a clear demonstration of urbanization's impact on local climates. The ability of GEE to facilitate such a comprehensive analysis not only showcases the engine's analytical capabilities but also offers invaluable insights for urban planning and sustainability efforts.
+
+#### Practical Outcomes and Future Prospects
+
+The successful application of GEE in monitoring SUHI across diverse urban environments sets a precedent for its potential in global environmental monitoring. The findings, while preliminary, pave the way for a possible global service on SUHI monitoring, which could significantly contribute to more sustainable urban development practices.
+
 ## Reflection
 
 This week's learning experience has been a journey filled with both challenges and discoveries for me. At the outset of my introduction to GEE, I was incredibly excited about its vast data resources and analytical capabilities, yet I also felt puzzled about how to effectively utilize this powerful tool.
@@ -67,3 +127,7 @@ Over the course of the week, I have gained a preliminary understanding of the ba
 In summary, this introductory week to GEE has been a challenging journey, but it has also opened a new perspective for me, deepening my understanding of the power and potential of remote sensing data. I look forward to continuing my exploration of GEE, applying the knowledge I have gained to a wider range of environmental monitoring and geographic analysis projects.
 
 ## References
+
+Amani, M., Maharjan, S., Allahbakhshi, H., Nascetti, A., and Ghorbanzadeh, O. (2020). 'Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review.' *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing*, 13, pp.5326-5350.
+
+Ravanelli, R., Nascetti, A., Cirigliano, R.V., Di Rico, C., Leuzzi, G., Monti, P., & Crespi, M. (2018). Monitoring the Impact of Land Cover Change on Surface Urban Heat Island through Google Earth Engine: Proposal of a Global Methodology, First Applications, and Problems. *Remote Sensing*, 10(1488). DOI:10.3390/rs10091488

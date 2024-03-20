@@ -1,9 +1,9 @@
-# Classification
+# ClassificationⅠ
 
 ## Summary
 
 | **Theme**                                      | **Key Points**                                                                                                                                                                  | **Source**                                                                                                                                                                                         |
-|------------------|-------------------------------------|------------------|
+|------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Urban Expansion**                            | Significant urban growth in Perth Metropolitan Region from 1990 to 2015, visualized using Landsat data                                                                          | MacLachlan et al. 2017                                                                                                                                                                             |
 | **Air Pollution and LULC**                     | Impact of LULC changes on major air pollutants and land surface temperatures, analyzed using Sentinel-3 and Sentinel-5 data                                                     | Fuldalu and Alta, 2021                                                                                                                                                                             |
 | **Urban Green Spaces**                         | Classification and assessment of urban green spaces using a variety of remote sensing techniques, highlighting the importance of hybrid methods and object-based image analysis | Shahtahmassebi et al. 2021                                                                                                                                                                         |
@@ -13,27 +13,111 @@
 | **Overfitting and Model Tuning**               | Discussion on strategies to avoid overfitting, such as pruning and Random Forests, and ensuring model reliability and accuracy                                                  | Bellini and Cascella, 2022;                                                                                                                                                                        |
 | **Image Classification Techniques**            | Principles and applications of image classification techniques like Maximum Likelihood Classification and Support Vector Machines                                               | Núñez et al. 2018; [Drew Wilimitis](https://towardsdatascience.com/the-kernel-trick-c98cdbcaeb3f#:~:text=The%20%E2%80%9Ctrick%E2%80%9D%20is%20that%20kernel,the%20data%20by%20these%20transformed) |
 
-### Landsat Data for Urban Expansion
+### Machine Learning Review
 
-Landsat satellite imagery plays a crucial role in monitoring urban expansion. The temporal depth and spatial resolution of Landsat data allow for detailed tracking of urban growth over time. By analyzing satellite images from different years, researchers can identify patterns of urban sprawl, quantify the rate of expansion, and observe changes in land use. The graduating colors in the imagery provide a visual representation of outward expansion, making it easier to communicate the findings to policymakers and the public.
+```{r echo=FALSE, out.width = "100%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "ML.png"))
+```
 
-### Sentinel-3 and Sentinel-5 for Air Pollution Monitoring
+### Machine Learning Methods
 
-The Sentinel-3 and Sentinel-5 satellites, part of the European Union's Copernicus program, offer critical data for studying air pollution and its relation to land use/land cover changes. Sentinel-3 provides Sea and Land Surface Temperature data, which is essential for understanding heat distribution and its impact on air quality. Sentinel-5 Precursor, on the other hand, focuses on monitoring major air pollutants, including nitrogen dioxide, ozone, formaldehyde, sulfur dioxide, methane, carbon monoxide, and aerosols. The integration of these datasets allows researchers to investigate the effects of LULC transformations on air pollution levels, providing insights into how urban planning and environmental policies might mitigate adverse impacts.
+**Understanding CART: The Foundation**
 
-### Hexagonal Grid System for Data Integration
+```{r echo=FALSE, out.width = "62%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "decisiontree.jpg"))
+```
 
-The concept of using a hexagonal grid system, as mentioned in the honeycombing technique, represents an innovative approach to integrating and analyzing sensor data from different sources. This method addresses the challenge of spatial heterogeneity in environmental data by providing a uniform framework for data aggregation. The hexagonal shape is preferred over square grids due to its efficiency in covering large areas without overlapping and minimizing distance distortion. This technique enhances the spatial analysis of environmental variables such as land surface temperature, particulate matter (PM2.5), and other pollutants, facilitating more accurate assessments of air quality and LULC impacts.
+*Decision Tree - Classification Source: [Towards Data Science](https://towardsdatascience.com/machine-learning-basics-decision-tree-regression-1d73ea003fda)*
 
-### Forest Watcher App for Illegal Logging Monitoring
+```{r echo=FALSE, out.width = "97%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "regressiontree.png"))
+```
 
-The Forest Watcher app exemplifies the application of mobile technology in environmental conservation. It allows users, including law enforcement and environmental activists, to access Global Forest Watch data in the field, enabling the detection of deforestation and forest degradation in real time. This tool leverages high-resolution satellite imagery and algorithms to identify changes in forest cover. By making this information readily accessible on mobile devices, the app empowers local authorities and communities to take immediate action against illegal logging activities.
+*Decision Tree - Regression Source: [Towards Data Science](https://towardsdatascience.com/machine-learning-basics-decision-tree-regression-1d73ea003fda)*
 
-### Classification and Regression Trees (CART) and Random Forests
+CART forms the bedrock of decision-making in machine learning, bifurcating into **classification trees** for categorical outcomes and **regression trees** for continuous predictions. This duality allows CART to adapt seamlessly to varying data analysis needs, from predicting whether it's a good day for golf based on weather conditions to forecasting GCSE scores.
 
-CART and random forests are powerful machine learning methods used for classification and regression tasks in environmental studies. CART algorithms split the data into subsets based on feature value thresholds, constructing decision trees that model the decision-making process. Random forests improve on this by creating an ensemble of decision trees, each trained on a random subset of the data. This approach reduces the variance of the model, leading to more stable and accurate predictions. In environmental applications, these techniques can classify land cover types, predict pollution levels, or assess the risk of forest fires, among other uses.
+-   **Key Feature**: Utilizes Gini Impurity to quantify category mixture within leaves, ensuring the purest split at each decision node.
+
+```{r echo=FALSE, out.width = "77%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "Gini.png"))
+```
+
+*Gini Impurity formula Source: [Huy Bui](https://towardsdatascience.com/decision-tree-fundamentals-388f57a60d2a)*
+
+**Random Forests: The Ensemble Strength**
+
+Building on CART, Random Forests amalgamate numerous decision trees to form a forest, enhancing prediction accuracy and stability through the wisdom of the crowd.
+
+```{r echo=FALSE, out.width = "77%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "forest.png"))
+```
+
+*Source:[Rosaria Silipo](https://towardsdatascience.com/from-a-single-decision-tree-to-a-random-forest-b9523be65147)*
+
+-   **Mechanism**: Employs bootstrap sampling and random variable selection at each split, culminating in a majority vote decision for classification or mean prediction for regression.
+
+-   **Application**: Ideal for land cover classification, showcasing its ability to handle large, complex datasets with reduced overfitting risk.
+
+**Support Vector Machines: Precision in Classification**
+
+SVM excels in creating hyperplanes in high-dimensional spaces, distinguishing between categories with maximum margin, thus ensuring clear, defined classification boundaries.
+
+```{r echo=FALSE, out.width = "70%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "SVM.png"))
+```
+
+*Source: (Núñez et al. 2019)*
+
+-   **Innovation**: The kernel trick transforms linearly inseparable data, facilitating classification in more complex scenarios.
+
+-   **Challenge**: Hyperparameter tuning (C and Gamma) through grid search optimizes the model's accuracy and generalization capability.
 
 ## Applications
+
+### **Urbanization's Impact on Land Surface Temperature**
+
+The study by Weng and Lu (2008) offers an insightful investigation into the effects of urbanization on land surface temperature (LST) in Indianapolis, USA. Utilizing Landsat TM/ETM+ imagery and a spectral unmixing model, the research quantitatively captures the morphological changes in urban landscapes and their impact on LST, revealing critical insights into the dynamics between increasing impervious surfaces, decreasing vegetation coverage, and the development of urban heat islands (UHIs).
+
+**Methodology and Findings**
+
+Employing linear spectral unmixing and hybrid classification methods, the study meticulously maps changes in **land use/land cover (LULC), impervious surfaces, and vegetation coverage over time**. It demonstrates a marked increase in impervious surfaces alongside a decrease in vegetation, correlating these changes with a rise in LST. Importantly, the study identifies a significant inverse relationship between LST and vegetation coverage, emphasizing the cooling effect of green spaces in urban areas.
+
+**Significance for Urban Planning**
+
+This research highlights the importance of integrating environmental considerations into urban planning efforts. By linking urbanization-driven LULC changes with increased LST, the study equips urban planners and policymakers with critical insights for creating more sustainable and livable urban environments. It underscores the necessity of preserving and incorporating green spaces within urban designs to mitigate UHI effects and enhance urban resilience to climate change.
+
+![](images/4.png)
+
+### Urban Flood-Risk Assessment: Decision-Making and Machine Learning Integration
+
+A groundbreaking approach to urban flood-risk assessment has been demonstrated by Taromideh et al. (2022), focusing on the city of Rasht, Iran. This study represents a significant advancement in utilizing semi-subjective and objective data through the Analytic Hierarchy Process (AHP) and machine learning models. By integrating classification and regression tree models with decision-making frameworks, the research outlines a method for generating urban flood-risk maps that consider both vulnerability and hazard of different urban areas.
+
+```{r echo=FALSE, out.width = "80%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "igure5-01.png"))
+```
+
+**Technical Insights**:
+
+-   **Machine Learning Application**: The study utilizes classification and regression tree models to analyze flood hazards and vulnerabilities. This methodological choice highlights the efficacy of machine learning in parsing complex environmental data, thereby enabling precise zoning of urban flood risks.
+
+    ![](images/figure7.png)
+
+-   **Data Integration**: Employing the AHP methodology, the study adeptly combines subjective judgments with objective assessments to organize and evaluate flood risk. This innovative approach underscores the importance of incorporating local knowledge and expert opinions into the analytical process, providing a more nuanced understanding of flood risks.
+
+```{r echo=FALSE, out.width = "50%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "figure8.png"))
+```
+
+-   **Practical Outcomes**: The resultant urban flood-risk map offers critical insights for city planners and emergency response teams in Rasht, illustrating areas of varying flood risk. Such detailed mapping is instrumental in guiding mitigation strategies, emergency responses, and urban planning decisions aimed at minimizing flood impact.
+
+```{r echo=FALSE, out.width = "60%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "figure9.png"))
+```
+
+**Implications for Urban Planning**:
+
+The study by Taromideh et al. (2022) not only provides a practical tool for flood-risk assessment in Rasht but also sets a precedent for other urban areas grappling with similar challenges. The integration of decision-making processes and machine learning into urban planning and risk management offers a promising pathway toward enhancing urban resilience against flooding.
 
 ## Reflection
 
@@ -55,4 +139,8 @@ MacLachlan, A. et al. (2017) 'Urban Growth Dynamics in Perth, Western Australia:
 
 Núñez, J.M. et al. (2019) 'High-Resolution Satellite Imagery Classification for Urban Form Detection', \[Online\]. IntechOpen. Available at: https://www.intechopen.com/chapters/64971 (Accessed: 16 March 2024).
 
-Shahtahmassebi, A.R. et al., 2021. Remote sensing of urban green spaces: A review, *Urban Forestry & Urban Greening*, årg. 57, s. 126946.
+Shahtahmassebi, A.R. et al. (2021). Remote sensing of urban green spaces: A review, *Urban Forestry & Urban Greening*, årg. 57, s. 126946.
+
+Taromideh, F.; Fazloula, R.; Choubin, B.; Emadi, A.; Berndtsson, R. (2022). Urban Flood-Risk Assessment: Integration of Decision-Making and Machine Learning. *Sustainability*, 14(4483). <https://doi.org/10.3390/su14084483>
+
+Weng, Q. & Lu, D. (2008). A sub-pixel analysis of urbanization effect on land surface temperature and its interplay with impervious surface and vegetation coverage in Indianapolis, United States, *International Journal of Applied Earth Observation and Geoinformation*, årg. 10, nr. 1, s. 68--83.

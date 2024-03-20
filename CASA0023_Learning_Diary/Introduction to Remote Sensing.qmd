@@ -3,7 +3,7 @@
 ## Summary
 
 |                               |                                                                                                    |
-|------------------|------------------------------------------------------|
+|-------------------------------|----------------------------------------------------------------------------------------------------|
 | **KEY ASPECT**                | **DESCRIPTION**                                                                                    |
 | **Definitions**               | Remote sensing as a technique for collecting Earth's surface information from a distance.          |
 | **Platforms**                 | Satellites, planes, drones ("spectroradiometer"in a lab or in the field)used for data acquisition. |

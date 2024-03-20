@@ -76,6 +76,12 @@ While the Ghanaian government has implemented seawall constructions as a counter
 
 The application of remotely sensed data can play a crucial role in supporting the policy goals set by the Ghanaian government for coastal erosion management. High-resolution optical satellite imagery (e.g., Sentinel-2, Landsat 8, Gaofen-1), Synthetic Aperture Radar (SAR) data (e.g., Sentinel-1), and Digital Elevation Models (DEMs) such as ASTER GDEM and SRTM, offer valuable tools for monitoring, planning, and managing coastal erosion efforts effectively.
 
+```{r echo=FALSE, out.width = "100%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "1-s2.0-S096456912100377X-gr2_lrg.jpg"))
+```
+
+*Methodology steps from Nativí-Merchán et al. （2021) （using aerial images）*
+
 **· Monitoring and Assessment**: By regularly comparing high-resolution satellite images, authorities can identify the most severely eroded areas and the rate of erosion. SAR data, capable of penetrating cloud cover, is invaluable for assessing the coastline's status during and after storm events, providing crucial information for emergency response and recovery efforts (Dellepiane, De Laurentiis & Giordano 2004).
 
 **· Planning and Implementation**: DEMs offer a three-dimensional representation of the surface, aiding in understanding the erosion process and its impact on coastal landscapes. This information can be used to strategically plan the location and design of seawalls and other protective measures, ensuring they are both effective and environmentally sustainable (Evadzi, Zorita, & Hünicke 2017).
@@ -100,6 +106,8 @@ Appeaning Addo, K. (2013). Assessing Coastal Vulnerability Index to Climate Chan
 
 Appeaning Addo, K. & Appeaning Addo, I. (2016). Coastal erosion management in Accra: Combining local knowledge and empirical research. *Jàmbá: Journal of Disaster Risk Studies*, 8(1), p.274. Available at: <https://jamba.org.za/index.php/jamba/article/view/274> \[Accessed 31 Jan. 2024\].
 
+Ayisi, E. (2022). *As rising seas destroy Ghana's coastal communities, researchers warn against a seawall-only solution*. Mongabay. Available at: <https://news.mongabay.com/2022/03/as-rising-seas-destroy-ghanas-coastal-communities-researchers-warn-against-a-seawall-only-solution/> \[Accessed 31 Jan. 2024\].
+
 Dellepiane, S., De Laurentiis, R. & Giordano, F. (2004). Coastline extraction from SAR images and a method for the evaluation of the coastline precision. *Pattern Recognition Letters*, 25(13), 1461-1470.
 
 Evadzi, P.I.K., Zorita, E. & Hünicke, B. (2017). Quantifying and predicting the contribution of sea-level rise to shoreline change in Ghana: Information for coastal adaptation strategies. *Journal of Coastal Research*, 33(6), pp.1283--1291.
@@ -112,6 +120,6 @@ Ministry of Works and Housing. (2019). *2019 Meet-the-Press Highlights*. \[pdf\]
 
 United Nations Development Programme. (n.d). *Sustainable Development Goals*. \[online\] Available at: <https://www.undp.org/sustainable-development-goals> \[Accessed 31 Jan. 2024\].
 
-Ayisi, E. (2022). *As rising seas destroy Ghana's coastal communities, researchers warn against a seawall-only solution*. Mongabay. Available at: <https://news.mongabay.com/2022/03/as-rising-seas-destroy-ghanas-coastal-communities-researchers-warn-against-a-seawall-only-solution/> \[Accessed 31 Jan. 2024\].
-
 Modern Ghana. (n.d). *Rising Sea Levels: How coastal dwellers in Accra are coping*. \[online\] Available at: <https://www.modernghana.com/news/1103977/rising-sea-levels-how-coastal-dwellers-in-accra.html> \[Accessed 31 Jan. 2024\].
+
+Nativí-Merchán, S. et al. (2021). Coastal erosion assessment using remote sensing and computational numerical model. Case of study: Libertador Bolivar, Ecuador. Ocean & Coastal Management, 214, p.105894.

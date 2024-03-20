@@ -2,3 +2,91 @@
 
 ::: {#refs}
 :::
+
+Amani, M., Maharjan, S., Allahbakhshi, H., Nascetti, A., and Ghorbanzadeh, O., 2020. 'Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review.' IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 13, pp.5326-5350.
+
+Alaska Satellite Facility, 2019. How do I interpret SAR images? Available at: <https://asf.alaska.edu/information/sar-information/how-do-i-read-sar-images/> \[Accessed 13 January 2024\].
+
+Appeaning Addo, K., 2013. Assessing Coastal Vulnerability Index to Climate Change: the Case of Accra -- Ghana. In: Proceedings of the 12th International Coastal Symposium, Plymouth, England, Journal of Coastal Research, Special Issue No. 65, pp.1892-1897.
+
+Appeaning Addo, K. & Appeaning Addo, I., 2016. Coastal erosion management in Accra: Combining local knowledge and empirical research. Jàmbá: Journal of Disaster Risk Studies, 8(1), p.274. Available at: <https://jamba.org.za/index.php/jamba/article/view/274> \[Accessed 31 Jan. 2024\].
+
+Appeaning Addo, K., Walkden, M. & Mills, J.P., 2008. Detection, measurement and prediction of shoreline recession in Accra, Ghana. Journal of Photogrammetry and Remote Sensing, 63, pp.543--558.
+
+Ayisi, E., 2022. As rising seas destroy Ghana's coastal communities, researchers warn against a seawall-only solution. Mongabay. Available at: <https://news.mongabay.com/2022/03/as-rising-seas-destroy-ghanas-coastal-communities-researchers-warn-against-a-seawall-only-solution/> \[Accessed 31 Jan. 2024\].
+
+Bellini, V. et al., 2022. 'Understanding basic principles of artificial intelligence: a practical guide for intensivists', Acta Biomed, 93, p. 2022297.
+
+Dellepiane, S., De Laurentiis, R. & Giordano, F., 2004. Coastline extraction from SAR images and a method for the evaluation of the coastline precision. Pattern Recognition Letters, 25(13), 1461-1470.
+
+Dell'Acqua, F., and Gamba, P., 2003. Texture-Based Characterization of Urban Environments on Satellite SAR Images. IEEE Transactions on Geoscience and Remote Sensing, 41(1), pp. 153--159.
+
+Donlon, C. et al., 2012. The Global Monitoring for Environment and Security (GMES) Sentinel-3 mission, Remote Sensing of Environment, årg. 120, s. 37--57.
+
+Drone Survey Canada, n.d. Drone Survey & Aerial Survey Plant Variability. Available at: <https://dronesurveycanada.ca/drone-survey-aerial-survey-plant-variability/> \[Accessed 13 January 2024\].
+
+Evadzi, P.I.K., Zorita, E. & Hünicke, B., 2017. Quantifying and predicting the contribution of sea-level rise to shoreline change in Ghana: Information for coastal adaptation strategies. Journal of Coastal Research, 33(6), pp.1283--1291.
+
+Fuladlu, K. & Altan, H., 2021. 'Examining land surface temperature and relations with the major air pollutants: A remote sensing research in case of Tehran', Urban Climate, 39, p. 100958.
+
+GIS Geography, n.d. Remote Sensing Earth Observation Guide. Available at: <https://gisgeography.com/remote-sensing-earth-observation-guide/> \[Accessed 14 January 2024\].
+
+Goetz, S. J., Bunn, A. G., Fiske, G. J., & Houghton, R. A., 2005. Satellite-observed photosynthetic trends across boreal North America associated with climate and fire disturbance. Proceedings of the National Academy of Sciences, 102(38), 13521-13525.
+
+"Ghana's coastline, swallowed by the sea," 2021. UNESCO Courier. Available at: <https://courier.unesco.org/en/articles/ghanas-coastline-swallowed-sea> \[Accessed 31 Jan. 2024\].
+
+Government of Ghana Ministry of Local Government and Rural Development, 2012. National Urban Policy Framework. Available at: <https://nupdb.urbanpolicyplatform.org/listings/Ghana> \[Accessed 31 Jan. 2024\].
+
+Gonzales, J., 2019. 'How a sheriff in Brazil is using satellites to stop deforestation'. Available at: <https://news.mongabay.com/2019/04/how-a-sheriff-in-brazil-is-using-satellites-to-stop-deforestation/> \[Accessed 13 January 2024\].
+
+iMathWorks, n.d. How do electromagnetic waves wave. Available at: <https://imathworks.com/physics/physics-how-do-electromagnetic-waves-wave/> \[Accessed 13 January 2024\].
+
+Lan, Z. & Liu, Y., 2018. Study on multi-scale window determination for GLCM texture description in high-resolution remote sensing image geo-analysis supported by GIS and domain knowledge. *ISPRS International Journal of Geo-Information*, 7(5), pp.175.
+
+Lu, D. & Weng, Q., 2007. A survey of image classification methods and techniques for improving classification performance. *International Journal of Remote Sensing*, 28(5), pp.823-870.
+
+MacLachlan, A. et al., 2017. 'Urban Growth Dynamics in Perth, Western Australia: Using Applied Remote Sensing for Sustainable Future Planning', *Land*, 6(1), p. 9.
+
+Ministry of Works and Housing, 2019. 2019 Meet-the-Press Highlights. Available at: <https://www.mwh.gov.gh/wp-content/uploads/2019/05/MEET-THE-PRESS-high-light-web-1.pdf> \[Accessed 31 Jan. 2024\].
+
+Modern Ghana, n.d. Rising Sea Levels: How coastal dwellers in Accra are coping. Available at: <https://www.modernghana.com/news/1103977/rising-sea-levels-how-coastal-dwellers-in-accra.html> \[Accessed 31 Jan. 2024\].
+
+Moro, L.D. et al., 2022. Geospatial Analysis with Landsat Series and Sentinel-3B OLCI Satellites to Assess Changes in Land Use and Water Quality over Time in Brazil, *Sustainability*, årg. 14, nr. 15, s. 9733.
+
+Mulero-Martinez, R. et al., 2022. The Use of Sentinel-3 Altimetry Data to Assess Wind Speed from the Weather Research and Forecasting (WRF) Model: Application over the Gulf of Cadiz, *Remote Sensing*, årg. 14, nr. 16, s. 4036.
+
+Munshi, T., 2013. Built form, Travel Behaviour, and Low Carbon Development in Ahmedabad, India. DOI: 10.13140/2.1.1217.9845.
+
+Nativí-Merchán, S. et al., 2021. Coastal erosion assessment using remote sensing and computational numerical model. Case of study: Libertador Bolivar, Ecuador. *Ocean & Coastal Management*, 214, p.105894.
+
+Núñez, J.M. et al., 2019. High-Resolution Satellite Imagery Classification for Urban Form Detection. Available at: <https://www.intechopen.com/chapters/64971> \[Accessed 16 March 2024\].
+
+Ogashawara, I., 2019. "The Use of Sentinel-3 Imagery to Monitor Cyanobacterial Blooms". In: *Environments*, 6.6, p. 60.
+
+Paul, R., Machado, P. & Small, C., 2013. Identifying multi-decadal changes of the Sao Paulo urban agglomeration with mixed remote sensing techniques: spectral mixture analysis and night lights.
+
+Ravanelli, R., Nascetti, A., Cirigliano, R.V., Di Rico, C., Leuzzi, G., Monti, P., & Crespi, M., 2018. Monitoring the Impact of Land Cover Change on Surface Urban Heat Island through Google Earth Engine: Proposal of a Global Methodology, First Applications, and Problems. *Remote Sensing*, 10(1488). DOI:10.3390/rs10091488.
+
+Shahtahmassebi, A.R. et al., 2021. Remote sensing of urban green spaces: A review, *Urban Forestry & Urban Greening*, årg. 57, s. 126946.
+
+Soni, D., 2018. Estimation of Rainfall-Runoff in a Watershed Using Remote Sensing and GIS.
+
+Spatial Post, 2023. Types of Platforms In Remote Sensing: A Comprehensive Guide. Available at: <https://www.spatialpost.com/types-of-platforms-in-remote-sensing/#google_vignette> \[Accessed 13 January 2024\].
+
+Tanim, A.H., McRae, C.B., Tavakol-Davani, H., and Goharian, E., 2022. Flood Detection in Urban Areas Using Satellite Imagery and Machine Learning. *Water*, 14(7), p.1140. Available at: <https://doi.org/10.3390/w14071140>.
+
+Tempfli, K. et al., 2009. Principles of remote sensing: an introductory textbook. Enschede: International Institute for Geo-Information Science and Earth Observation.
+
+Toth, C., 2018. The Future of Remote Sensing: Harnessing the Data Revolution. *GeoActa*, 42(2), pp.1-6.
+
+United Nations Development Programme, n.d. Sustainable Development Goals. Available at: <https://www.undp.org/sustainable-development-goals> \[Accessed 31 Jan. 2024\].
+
+USGS, n.d. What is Radiometric Resolution? Available at: <https://www.usgs.gov/faqs/what-radiometric-resolution> \[Accessed 14 January 2024\].
+
+Wang, J., Ge, Y., Heuvelink, G.B.M., Zhou, C., and Brus, D., 2012. "Effect of the Sampling Design of Ground Control Points on the Geometric Correction of Remotely Sensed Imagery." *International Journal of Applied Earth Observation and Geoinformation*, 18(August), pp. 91--100.
+
+Weng, Q. & Lu, D., 2008. A sub-pixel analysis of urbanization effect on land surface temperature and its interplay with impervious surface and vegetation coverage in Indianapolis, United States. *International Journal of Applied Earth Observation and Geoinformation*, 10(1), s. 68--83.
+
+Zawadzki, L. and Ablain, M., 2016. "Accuracy of the mean sea level continuous record with future altimetric missions: Jason-3 vs. Sentinel-3a". In: *Ocean Science*, 12(1), pp. 9-18.
+
+Zeng, Y. et al., 2022. Optical vegetation indices for monitoring terrestrial ecosystems globally. *Remote Sensing Applications: Society and Environment*, 3(7), pp.477--493.
