@@ -114,6 +114,12 @@ Ravanelli et al. (2018) developed a large-scale spatio-temporal procedure using 
 
 The study's application to six metropolitan areas in the U.S. revealed a general increase in SUHI due to urban growth, providing a clear demonstration of urbanization's impact on local climates. The ability of GEE to facilitate such a comprehensive analysis not only showcases the engine's analytical capabilities but also offers invaluable insights for urban planning and sustainability efforts.
 
+```{r echo=FALSE, out.width = "90%", fig.align='center', cache=FALSE}
+knitr::include_graphics(here::here("images", "remotesensing-10-01488-g018-550.jpg"))
+```
+
+*Phoenix MA: LC situation in 1992 (**a**) and in 2011 (**b**). In red, the Urbanized class, in light green, the Cultivated class, in dark green, the Forest and Shrubland classes*
+
 #### Practical Outcomes and Future Prospects
 
 The successful application of GEE in monitoring SUHI across diverse urban environments sets a precedent for its potential in global environmental monitoring. The findings, while preliminary, pave the way for a possible global service on SUHI monitoring, which could significantly contribute to more sustainable urban development practices.
